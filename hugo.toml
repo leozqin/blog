@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "."
 title = "Leo Qin"
 languageCode = "en"
 theme = "smol"
@@ -6,7 +6,7 @@ preserveTaxonomyNames = true
 copyright = "Leo Qin"
 
 [params]
-    dateFmt = "2006-02-01"
+    dateFmt = "2006-01-02"
 
 [menu]
   # This displays buttons in the navbar to access your contents
