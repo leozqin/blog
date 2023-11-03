@@ -1,7 +1,7 @@
 ---
 title: "Introducing ETL Markup Toolkit (EMT)"
 description: A declarative framework for defining spark transformations that you should NOT use
-date: 2021-03-31
+date: 2021-03-01
 tldr: I developed an open source toolkit for writing Spark-native ETL using configurations in a highly sub-scriptable and transparent way. You can find it at https://github.com/leozqin/etl-markup-toolkit
 slug: etl-markup-toolkit
 tags:
