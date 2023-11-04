@@ -17,4 +17,6 @@ steps:
   commands:
   - git submodule update --init --recursive
   - hugo --config local
+  - hugo list all --config local > pages.csv
+  - column -s, -t < pages.csv | less -#2 -N -S
     
