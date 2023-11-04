@@ -1,0 +1,42 @@
+---
+kind: pipeline
+type: docker
+name: branch_build
+
+trigger:
+  event:
+  - push
+  - pull_request
+  branch:
+    exclude:
+    - main
+
+steps:
+- name: build
+  image: hugomods/hugo:latest
+  commands:
+  - git submodule update --init --recursive
+  - hugo --config local
+  - hugo list all --config local
+
+---
+kind: pipeline
+type: ssh
+name: deploy
+
+server:
+  host: nuc0
+
+trigger:
+  event:
+  - push
+  branch:
+  - main
+
+steps:
+- name: deploy
+  commands:
+  - cd /home/leo/blog
+  - git pull
+  - git submodule update --init --recursive
+  - docker compose up --build --detach
