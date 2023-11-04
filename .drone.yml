@@ -5,11 +5,11 @@ name: branch_build
 
 trigger:
   event:
-    - push
-    - pull_request
+  - push
+  - pull_request
   branch:
-      exclude:
-      - main
+    exclude:
+    - main
 
 steps:
 - name: build
