@@ -8,4 +8,10 @@ steps:
   image: hugomods/hugo:latest
   commands:
   - hugo --config local
-  - hugo list all --config local
+  when:
+    event:
+    - push
+    - pull_request
+    branch:
+      exclude:
+      - main
