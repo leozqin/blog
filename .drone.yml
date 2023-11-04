@@ -18,4 +18,25 @@ steps:
   - git submodule update --init --recursive
   - hugo --config local
   - hugo list all --config local
-    
+
+---
+kind: pipeline
+type: ssh
+name: deploy
+
+server:
+  host: nuc0
+
+trigger:
+  event:
+  - push
+  branch:
+  - main
+
+steps:
+- name: deploy
+  commands:
+  - cd /home/leo/blog
+  - git pull
+  - git submodule update --init --recursive
+  - docker compose up --build --detach
