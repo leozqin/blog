@@ -1,17 +1,19 @@
 ---
 kind: pipeline
 type: docker
-name: build
+name: branch_build
+
+trigger:
+  event:
+    - push
+    - pull_request
+  branch:
+      exclude:
+      - main
 
 steps:
 - name: build
   image: hugomods/hugo:latest
   commands:
   - hugo --config local
-  when:
-    event:
-    - push
-    - pull_request
-    branch:
-      exclude:
-      - main
+    
