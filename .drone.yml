@@ -25,7 +25,8 @@ type: ssh
 name: deploy
 
 server:
-  host: nuc0
+  host: nuc
+  user: leo
 
 trigger:
   event:
