@@ -1,0 +1,11 @@
+---
+kind: pipeline
+type: docker
+name: build
+
+steps:
+- name: build
+  image: hugomods/hugo:latest
+  commands:
+  - hugo --config local
+  - hugo list all --config local
