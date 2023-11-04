@@ -25,8 +25,11 @@ type: ssh
 name: deploy
 
 server:
-  host: nuc
-  user: leo
+  host: nuc0
+  user:
+    from_secret: BLOG_USER
+  password:
+    from_secret: BLOG_USER_PASSWORD
 
 trigger:
   event:
