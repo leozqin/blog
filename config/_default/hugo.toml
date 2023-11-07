@@ -21,6 +21,18 @@ copyright = "Leo Qin"
     url = "/posts/"       # The path can lead to a content folder too.
     weight = 20
 
+  [[menu.main]]
+    identifier = "about"
+    name = "About This Blog"
+    url = "/about-this-blog/"       # The path can lead to a content folder too.
+    weight = 30
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"       # The path can lead to a content folder too.
+    weight = 40
+
 [taxonomies]
 category = "categories"
 tags = "tags"
