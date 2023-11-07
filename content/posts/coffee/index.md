@@ -3,7 +3,7 @@ title: "How Many Cups Does Starbucks Use in a Day?"
 description: An early experiment in Fermi estimation
 date: 2015-09-14
 tldr: A lot! Also, did bring-your-own cup die with covid?
-slug: how-many-miles-will-you-scroll
+slug: how-many-cups-does-starbucks-use-in-a-day
 tags:
 - hall-of-fame
 ---
