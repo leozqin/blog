@@ -4,6 +4,9 @@ theme = "smol"
 preserveTaxonomyNames = true
 copyright = "Leo Qin"
 
+[outputs]
+  home = ["HTML", "RSS"]
+
 [params]
     dateFmt = "2006-01-02"
 

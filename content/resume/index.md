@@ -3,6 +3,8 @@ title: "My Resume"
 slug: resume
 date: "2023-10-30"
 ---
+[Click here for PDF version](resume.pdf)
+
 ## About Me
 I am a product-focused data engineer with strong proficiency in systems architecture, infrastructure, and R&D. I have substantial subject matter experience in identity resolution, payments, lending, and fraud detection. Prior experience/background in product management, data science, and applied machine learning.
 ## History
