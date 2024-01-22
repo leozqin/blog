@@ -10,6 +10,13 @@ copyright = "Leo Qin"
 [params]
     dateFmt = "2006-01-02"
 
+[permalinks]
+  [permalinks.page]
+    posts = '/posts/:slug/'
+  [permalinks.section]
+    posts = '/posts/'
+
+
 [menu]
   # This displays buttons in the navbar to access your contents
   [[menu.main]]
