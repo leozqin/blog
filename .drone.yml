@@ -25,7 +25,7 @@ type: ssh
 name: deploy
 
 server:
-  host: nuc0.leo
+  host: nuc1.leo
   user:
     from_secret: BLOG_USER
   password:

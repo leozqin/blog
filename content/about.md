@@ -13,7 +13,7 @@ This blog is served by [Cloudflare Pages](https://developers.cloudflare.com/page
 
 But how does my code get to Github? Here's where it gets weird.
 
-This site is actually a follower of a site in my home network - blog.leo. That site runs as a `docker compose` stack containing the generated static site files and a nginx web server.
+This site is actually a follower of a site in my home network - blog.leozq.in. That site runs as a `docker compose` stack containing the generated static site files and a nginx web server.
 
 The code for blog.leo is stored in a self-hosted Gitea instance and deployed to a NUC in my home network using self-hosted Drone CI.
 

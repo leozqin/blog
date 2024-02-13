@@ -1,7 +1,7 @@
 # My Blog
 This repo contains the source for my blog.
 
-You can find it http://blog.leo/ if you're on my network.
+You can find it https://blog.leozq.in/ if you're on my network. Otherwise - https://leozqin.me/
 
 # Setup - Docker
 1. Clone the repo
