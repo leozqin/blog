@@ -1,7 +1,7 @@
 # My Blog
-This repo contains the source for my blog.
+This repo contains the source for my blog. If reading MDs on github is your thing, feel free to read my blog from here.
 
-You can find it https://blog.leozq.in/ if you're on my network. Otherwise - https://leozqin.me/
+Otherwise find it at - https://leozqin.me/, and I publish a RSS feed at https://www.leozqin.me/index.xml
 
 # Setup - Docker
 1. Clone the repo
