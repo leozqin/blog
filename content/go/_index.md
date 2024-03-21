@@ -2,6 +2,7 @@
 title: "Go Links"
 slug: go
 date: 2024-03-16
+layout: single
 ---
 My website supports go-links. These are usually links that are relevant to my online presence.
 
