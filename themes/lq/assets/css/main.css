@@ -1,0 +1,49 @@
+body {
+  background-color: #222;
+  color: azure;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: auto;
+  max-width: 1280px;
+  width: 70%;
+}
+
+header {
+  border-bottom: 1px solid #222;
+  margin-bottom: 1rem;
+}
+
+footer {
+  border-top: 1px solid #222;
+  margin-top: 1rem;
+}
+
+a {
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+a.title {
+  color: azure;
+}
+
+.list-item {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.continue-reading {
+  padding-top: 1em;
+}
+
+.more-posts-button {
+  margin: auto;
+  width: 100%;
+}
+
+.recent-posts {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}

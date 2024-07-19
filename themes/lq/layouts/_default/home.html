@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ range .Site.RegularPages.ByDate.Reverse | first 5 }}
+<div class="recent-posts">
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+</div>
+
+{{end}}
+<div class="more-posts">
+  <button class="more-posts-button">
+    <a href="/posts/">More Posts</a>
+  </button>
+</div>
+{{ end }}
