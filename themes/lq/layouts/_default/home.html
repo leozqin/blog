@@ -1,13 +1,36 @@
 {{ define "main" }}
-{{ range .Site.RegularPages.ByDate.Reverse | first 5 }}
-<div class="recent-posts">
-  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-</div>
 
-{{end}}
-<div class="more-posts">
-  <button class="more-posts-button">
-    <a href="/posts/">More Posts</a>
-  </button>
+<div class="home">
+  <p> {{ .Site.Data.profile.message }}</p>
+  <p>To retrieve my profile data as json, simply GET the /json/ path:</p>
+  <code>curl {{ absURL "/json/" }}</code>
+  </pre>
+  <h1>Pages</h1>
+  {{ range .Site.Menus.main }}
+  <p class="menu-item">
+    <a href="{{ .URL | relURL }}">{{ lower .Name }}</a>
+  </p>
+  {{ end }}
+  <h1>Recent Posts</h1>
+  {{ range .Site.RegularPages.ByDate.Reverse | first 5 }}
+  <p>
+    <a href="{{ .RelPermalink }}">{{ lower .Title }}</a>
+  </p>
+  {{ end }}
+  <p>
+    <a href="/posts/">-- other posts --</a>
+  </p>
+  <h1>Social</h1>
+  {{ range .Site.Data.profile.social }}
+  <p>
+    <a href="{{ .link }}">{{ .network }}</a>
+  </p>
+  {{ end }}
+  <h1>Projects</h1>
+  {{ range .Site.Data.profile.projects }}
+  <p>
+    <a href="{{ .link }}">{{ .project }}</a> - {{ .description }} ({{ delimit .tools ", "}})
+  </p>
+  {{ end }}
 </div>
 {{ end }}

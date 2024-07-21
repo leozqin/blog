@@ -1,0 +1,30 @@
+message: >
+  Hello! I'm Leo. As you can see from this site, I'm not very good
+  at frontend. However, I'm good with data and infrastructure, and
+  I like to think I'm dangerous when it comes to backend and security
+  (in a good way, of course!). I also like writing, and making free
+  and open source software. Find some interesting pages and posts below!
+projects:
+- project: precis
+  stage: alpha
+  description: an extensible rss reader with AI
+  link: https://github.com/leozqin/precis
+  tools:
+    - python
+    - tailwind
+    - docker-compose
+- project: venmo-calculator
+  stage: pre-alpha
+  description: a simple app for splitting the bill
+  link: https://github.com/leozqin/venmo-calculator
+  tools:
+    - golang
+    - vue.js
+    - docker-compose
+social:
+- network: github
+  link: /go/github
+- network: linkedin
+  link: /go/linkedin
+- network: rss
+  link: /index.xml
