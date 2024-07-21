@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <h1 class="title">{{ .Title }}</h1>
+  <h4><a href="/">Back to Home</a> | <a href="/posts">Back to Posts</a></h4>
+
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format "2006-01-02" }}
+  Written: <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  <br />
+  ---
+  <div class="prose">
+    {{ .Content }}
+  </div>
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}
