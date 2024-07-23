@@ -33,4 +33,6 @@ Probably not - if you're looking for a HHKB layout keyboard that can support hot
 
 If there is one thing going to the HHKB Studio, the software that PFU produces for configuring keymaps and layers is pretty good. But - surely similar software exists for QMK? And also, I don't find myself modifying the keymap very often.
 
-Finally - perhaps the dagger in the heart of the HHKB Studio is the fact that it takes AA batteries, whereas the Tokyo60 has an integrated (and somewhat easily) replaceable battery.
+The one differentiator, I think, that the HHKB Studio can provide compared to the Tokyo60 is that it is wireless. Albeit, wireless powered by no fewer than 4 AAA batteries. To some degree, I appreciate the fact that the battery will never wear down the way that lithium ions tend to, but the duty cycle for keyboards is way different than the same for laptops. So - perhaps the tradeoff is worth it.
+
+All in all, I think I would generalize my feelings about the keyboard as "it's a competent keyboard, but its quirks make it hard to justify the price, and its inbuilt oddities (trackpoint, touch zones, etc..) aren't quite fun enough to overcome that".
