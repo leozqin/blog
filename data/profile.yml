@@ -28,3 +28,5 @@ social:
   link: /go/linkedin
 - network: rss
   link: /index.xml
+- network: email
+  link: /contact
