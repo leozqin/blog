@@ -7,7 +7,7 @@ tags:
 ---
 And now for something completely different - a recipe blog without measurements or highly structured instructions. But also, no irrelevant padding to make room for ad space, because this blog doesn't serve ads (and never will). Just to put my money where my mouth is, I'll start with the recipe, and then proceed to the yapping about it afterwards.
 
-# Chicken with Mushrooms
+# Chicken with Couscous and Mushrooms
 ## Ingredients
 - chicken thighs
 - mushrooms
