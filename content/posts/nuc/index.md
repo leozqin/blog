@@ -41,4 +41,3 @@ Regrettably, Arrow Electronics appears to be a fundamentally sound, prudently ru
 Side note: this appears to be a very fresh edit to wikipedia:
 
 {{< figure src="seneca_closure.png" title="Written in the first person, this wikipedia article explains the latest in Seneca Data's life" >}}
-
