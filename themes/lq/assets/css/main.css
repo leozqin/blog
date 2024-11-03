@@ -7,7 +7,7 @@ body {
   margin: auto;
   max-width: 90%;
   width: 80%;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -51,7 +51,7 @@ a.title {
 }
 
 h1.title {
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 /* Customs - Class Level */
@@ -137,7 +137,7 @@ h1.title {
   border-width: 2px;
   border-radius: 25px;
   border-color: darkgrey;
-  font-weight: light;
+  font-weight: normal;
 }
 
 /* Posts */
