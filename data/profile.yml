@@ -24,8 +24,6 @@ projects:
 social:
 - network: github
   link: /go/github
-- network: linkedin
-  link: /go/linkedin
 - network: rss
   link: /index.xml
 - network: email

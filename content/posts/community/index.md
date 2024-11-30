@@ -43,12 +43,27 @@ In other words, while my intention to be seen may involve participating in socia
 
 The other lesson that I've learned from grieving The Bad Thing is that the extent of my participation in social media cannot be one-sided. As someone who is generally Very Online, I found great joy in TikTok, but it's clear that the nature of its algorithm in past few months has failed to serve me well. I was not active on Facebook enough to truly understand the impact of misinformation and echo chamber-ing in 2016, but this time it's very clear that any algorithm designed to encourage engagement is not healthy, neither for content consumers or producers. In this way, I find myself worrying about the wellness of the people who make the content I enjoy, as its quite clear that the algorithm doesn't serve them. Do they ever think about that? What is the point of producing content for an algorithm that doesn't value it for its quality, but simply because it makes other talk? I think that this is a clear formula for reactionary content (which is in no way a hot take, I admit). Just like TikTok is allegedly doing to us, I was simply surveiling them.
 
-When it comes to my participation in social media and the act (and existential terror) of being seen, I decide that:
-- I will not participate in any algorithm that surfaces content based on engagement
-- To the degree that participating in social media means consuming and creating content, I will strive to find a balance that involves both
-- I will prioritize social media platforms that have no algorithm
-- I will consider social media platforms that use algorithms that prioritize quality (if such a thing exists).
+Interestingly enough, it's been about three weeks since I last used Tiktok as I write this, and I don't miss it. I think that it must have been a fount of high quantity, but low quality content. Good riddance, I suppose. Moving forward I will, in general, prioritize forms of social media that aren't algorithmically driven, and also seek to participate in those forums equally - no more "lurking"! Such is the nature of being seen, so that I may also strive to see others.
 
-Finally, I want to fully and actively acknowledge that social media is not real life, and realistically, neither is the internet. This means being seen in person; I want to continue to ruminate on what this means, but you (reader, which is hopefully not just GitHub Actions) should try and hold me accountable if I'm not doing that.
+Finally - I do want to fully and actively acknowledge that social media is not real life, and realistically, neither is the internet. This means being seen in person; I want to continue to ruminate on what this means, but you (reader, which is hopefully not just GitHub Actions) should try and hold me accountable if I'm not doing that. Again, to be perceived is to experience existential terror.
 
-# Rubber meets Road
+# A mini-blog about the Fediverse
+To those who know me and/or are intrigued by technology in general, after having read the volume of words above, it should then come as no surprise that I've joined the Fediverse! If the thing that we do on Mastodon is "micro-blogging", then we may consider the whole of this post to be "macro-blogging", and think about this somewhat encapsulated section as a "mini-blog".
+
+Anyway, yes - you can find me [@arch@fedi.gremlin.work](https://fedi.gremlin.work/@arch). I'm currently running a single-user instance via masto.host, but the concept of alternative mastodon servers is inevitably intriguing to me, so that may yet change. Sounds like a great opportunity to try out hosting a website for the broader internet (I've kind of been itching to try out Cloudflare Tunnels, so this is perhaps the right kind of low-stakes use case for that). I'm sure that I'll also learn a lot about how data portability works in the Fediverse!
+
+As a single user instance, there are considerable challenges around content discovery; in particular, the only way to find content is to follow people, and the Fediverse has a bias towards consensualism when it comes to federation. This is, of course, highly understandable; decentralized consensual networks are what the internet of dreams is made of - but, it also poses a chicken and egg problem. If it's important to have reputation, then starting anew on a single user instance means bootstrapping your own reputation. These days, most users aren't so selective about their followers, but the promise of the Fediverse is to provide that control. Perhaps, just as how I feel that I will be one of the last software engineers to be self-taught, the same can be said for users that start in the Fediverse solely without prior reputation. There is, of course, an easy solution, which is to join another instance and build a reputation before setting out on your own! I'm also running Fedifetcher to help populate my instance with more lively content. 
+
+My final unrelated thought on this matter is that the fever dream of the internet as a series of decentralized consensual networks plays prominently in the utopian sci-fi that I love (see: The Terraformers by Annalee Newitz or A Half-Built Garden by Ruthanna Emrys), and they seem to solve the bootstrapping problem through circumstance of being. Everyone belongs to the network by nature of their birth, or where they happen to live. Whether or not this is simply a replication of the state is a matter for another macro-blog, I feel.
+
+Some additional housekeeping -
+
+It's always felt deeply silly to feature LinkedIn so prominently on my home page; it seems only right to replace that link with the Fediverse.
+
+If you're a human reading this, feel free to reach out on Mastodon! I also plan to start sharing my macro-blogs to Mastodon.
+
+I may join Bluesky yet, depending on my appetite and capacity for participating in social media. [This post](https://dustycloud.org/blog/how-decentralized-is-bluesky/) by one of the main contributors to ActivityPub does a great job of describing how to perceive Bluesky (or rather, its protocol) - Decentralized in theory (but not in practice, due to impractically high maintenance cost), but less so than ActivityPub, not Federated, but meant to be resilient to the "credible exit" of BlueSky. 
+
+As does the author, I find the latter to be very interesting; will the protocol evolve to make it easier for others to provide a AT Protocol-based alternative to Bluesky? Or, will the cost of doing so remain high enough that only large corporations can manage to do that? Alternatively, could a sufficiently determined group of self-governing individuals pull it off?
+
+All I know is that is my Mastodon instance is run by me for my own benefit only.
