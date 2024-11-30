@@ -3,9 +3,6 @@
 <div class="home">
   <div class="intro-box">
     <p> {{ .Site.Data.profile.message }}</p>
-    <p>To retrieve my profile data as json, simply GET the /json/ path:</p>
-    <code>curl {{ absURL "/json/" }}</code>
-    </pre>
   </div>
   <section class="home-grid">
     <div class="section-box">
@@ -34,6 +31,9 @@
         <a href="{{ .link }}">{{ .network }}</a>
       </p>
       {{ end }}
+      <p>
+        <a rel="me" href="https://fedi.gremlin.work/@arch">fediverse</a>
+      </p>
     </div>
     <div class="section-box">
       <h1>Projects</h1>
