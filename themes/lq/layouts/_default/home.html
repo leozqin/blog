@@ -2,9 +2,11 @@
 
 <div class="home">
   <div class="intro-box">
-    <p> {{ .Site.Data.profile.message }}</p>
+    {{ range .Site.Data.profile.message }}
+    <p> {{ . }} </p>
+    {{ end }}
   </div>
-  <section class="home-grid">
+  <section>
     <div class="section-box">
       <h1>Pages</h1>
       {{ range .Site.Menus.main }}
@@ -15,7 +17,7 @@
     </div>
     <div class="section-box">
       <h1>Recent Posts</h1>
-      {{ range .Site.RegularPages.ByDate.Reverse | first 5 }}
+      {{ range .Site.RegularPages.ByDate.Reverse | first 10 }}
       <p>
         <a href="{{ .RelPermalink }}">{{ lower .Title }}</a>
       </p>
