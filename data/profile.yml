@@ -19,6 +19,14 @@ projects:
     - golang
     - vue.js
     - docker-compose
+- project: local-library
+  stage: pre-alpha
+  description: a dead-simple filesystem-based epub library
+  link: https://github.com/leozqin/local-library
+  tools:
+    - python
+    - astro.js
+    - docker-compose
 social:
 - network: github
   link: /go/github
