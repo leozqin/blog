@@ -1,0 +1,31 @@
+---
+import HeaderMeta from "../components/HeaderMeta.astro";
+import IndexIntro from "../components/IndexIntro.astro";
+import IndexPostListItem from "../components/IndexPostListItem.astro";
+import { getCollection } from "astro:content";
+
+const blogs = await getCollection("blogs");
+---
+
+<!-- Below is your "component template." It's just HTML, but with
+    some magic sprinkled in to help you build great templates. -->
+<html lang="en">
+    <head>
+        <title>Leo's Blog</title>
+        <HeaderMeta />
+    </head>
+    <body class="bg-primary">
+        <IndexIntro />
+        {
+            blogs
+                .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+                .map((post) => (
+                    <IndexPostListItem
+                        id={post.id}
+                        title={post.data.title}
+                        date={post.data.date}
+                    />
+                ))
+        }
+    </body>
+</html>

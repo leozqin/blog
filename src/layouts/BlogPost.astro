@@ -1,0 +1,53 @@
+---
+import { late } from "astro:schema";
+import HeaderMeta from "../components/HeaderMeta.astro";
+import PostFooter from "../components/PostFooter.astro";
+
+interface Props {
+  title: string;
+  date: Date;
+}
+
+const { title, date } = Astro.props;
+const contentClasses: string[] = [
+  "prose-invert",
+  "max-w-none",
+  "text-primary",
+  "w-6/7",
+  "lg:w-2/3",
+  "mx-auto",
+  "prose-headings:my-2",
+  "prose-h1:text-3xl",
+  "prose-h2:text-2xl",
+  "prose-h3:text-xl",
+  "prose-a:text-secondary",
+  "prose-a:underline",
+  "prose-a:decoration-dashed",
+  "prose-li:list-disc",
+  "prose-li:list-inside",
+  "prose-p:py-1",
+  "prose-code:text-code",
+  "prose-code:bg-code",
+  "prose-code:p-0.5",
+  "prose-code:rounded",
+  "prose-code:border-width-2"
+];
+---
+
+<html lang="en">
+  <head>
+    <title>{title}</title>
+    <HeaderMeta />
+  </head>
+  <body class="bg-primary text-primary p-2">
+    <nav>
+      <a href="/">Home</a>
+    </nav>
+    <h1>{title}</h1>
+    <h2>Written: {date.toDateString()}</h2>
+    <article class=`${contentClasses.join(" ")}`>
+      <slot />
+    </article>
+    <PostFooter />
+  </body>
+</html>
