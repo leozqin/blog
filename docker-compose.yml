@@ -1,15 +1,9 @@
 version: '3'
 
 services:
-  hugo:
-    env_file: 
-      - ./.env
+  astro:
     build:
       context: .
       dockerfile: Dockerfile
-      args:
-        HUGO_ENV: ${HUGO_ENV}
     ports:
-      - 1313:80
-    volumes:
-      - ./:/src
+      - 4321:80

@@ -1,0 +1,44 @@
+---
+import HeaderMeta from "../components/HeaderMeta.astro";
+import PostFooter from "../components/PostFooter.astro";
+import NavHeader from "../components/NavHeader.astro";
+import { ContentClasses } from "../content";
+import BlogTitle from "../components/BlogTitle.astro";
+
+interface Props {
+  title: String;
+  date: Date;
+  wordCount: Number;
+  readTime: String;
+}
+
+const { title, date, wordCount, readTime } = Astro.props;
+const articleClasses: String[] = [
+  "prose-invert",
+  "max-w-none",
+  "text-primary",
+  "w-6/7",
+  "lg:w-2/3",
+  "mx-auto",
+];
+---
+
+<html lang="en">
+  <head>
+    <title>{title} - Leo's Blog</title>
+    <HeaderMeta />
+  </head>
+  <body class="bg-primary text-primary">
+    <NavHeader />
+    <BlogTitle
+      title={title}
+      date={date}
+      wordCount={wordCount}
+      readTime={readTime}
+    />
+    <article class:list={articleClasses.concat(ContentClasses)}>
+      <slot />
+    </article>
+    <PostFooter />
+  </body>
+</html>

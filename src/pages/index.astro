@@ -1,0 +1,29 @@
+---
+import HeaderMeta from "../components/HeaderMeta.astro";
+import IndexIntro from "../components/IndexIntro.astro";
+import BlogList from "../components/BlogList.astro";
+import NavHeader from "../components/NavHeader.astro";
+import IndexProjectCards from "../components/IndexProjectCards.astro";
+import IndexBadges from "../components/IndexBadges.astro";
+
+const recentPostsCount = 4;
+---
+
+<html lang="en">
+    <head>
+        <title>Leo's Blog</title>
+        <link rel="me" href="https://fedi.gremlin.work/@arch">
+        <HeaderMeta />
+    </head>
+    <body class="bg-primary">
+        <NavHeader />
+        <IndexIntro />
+        <BlogList
+            title="Recent Posts"
+            count={recentPostsCount}
+            showMore={true}
+        />
+        <IndexProjectCards />
+        <IndexBadges />
+    </body>
+</html>

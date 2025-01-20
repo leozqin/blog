@@ -1,5 +1,0 @@
-{
-    "tabAutocompleteOptions": {
-        "disableInFiles": ["content/posts/**/*.md"]
-    }
-}

@@ -1,0 +1,41 @@
+---
+import BlogListItem from "./BlogListItem.astro";
+import Button from "./Button.astro";
+import { getCollection } from "astro:content";
+const blogs = await getCollection("blogs");
+
+interface Props {
+    title: string;
+    count?: number;
+    showMore?: boolean;
+}
+
+const { title, count = blogs.length, showMore = false } = Astro.props;
+const postsLink = new URL("posts", Astro.url);
+var showMoreDisplayVal = showMore ? 'flex' : 'none'
+---
+
+<section class="mx-auto w-7/8 lg:w-1/2 px-4 leading-loose">
+    <h1 class="text-3xl my-4 text-primary">{title}</h1>
+    {
+        blogs
+            .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+            .slice(0, count)
+            .map((post) => (
+                <BlogListItem
+                    id={post.id}
+                    title={post.data.title}
+                    date={post.data.date}
+                />
+            ))
+    }
+    <div class="text-primary flex more-posts">
+        <Button label="More Posts" link={postsLink} />
+    </div>
+</section>
+
+<style define:vars={{ showMoreDisplayVal }}>
+    .more-posts {
+        display: var(--showMoreDisplayVal);
+    }
+</style>

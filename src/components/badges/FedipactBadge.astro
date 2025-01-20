@@ -1,0 +1,45 @@
+<div class="mx-auto">
+    <button class="badge">
+        <a class="badge-text" href="https://fedipact.online/">⁂ Fedipact</a>
+    </button>
+</div>
+
+<style>
+    .badge {
+        min-width: 120px;
+        max-width: 120px;
+        min-height: 20px;
+        max-height: 20px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 4px;
+        color: white;
+        border-width: 0.25px;
+        background-color: #2f0c7a;
+        animation: fading 8s infinite;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .badge-text {
+        font-family: monospace;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 auto;
+    }
+
+    @keyframes fading {
+        0% {
+            background-color: black;
+            color: white;
+        }
+        50% {
+            background-color: #ff69b4;
+            color: black;
+        }
+        100% {
+            background-color: black;
+            color: white;
+        }
+    }
+</style>

@@ -1,0 +1,18 @@
+---
+interface Props {
+    id: string;
+    title: string;
+    date: Date;
+}
+
+const { id, title, date } = Astro.props;
+const isoDate = date.toISOString().split("T")[0];
+---
+
+<li class="text-primary list-inside my-1">
+    <a
+        href=`posts/${id}`
+        class="text-secondary underline decoration-dashed underline-offset-4"
+        >{isoDate}: {title}</a
+    >
+</li>
