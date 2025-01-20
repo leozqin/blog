@@ -1,5 +1,6 @@
 ---
 title: "Seeing and Being Seen"
+slug: seeing-and-being-seen
 date: 2024-11-23
 ---
 # The Meaning of Community

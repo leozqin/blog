@@ -15,7 +15,6 @@
     in pkgs.mkShell {
       name = "blog";
       packages = with pkgs; [
-        hugo
         nodejs_22
       ];
     };

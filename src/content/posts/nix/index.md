@@ -1,6 +1,7 @@
 ---
 title: 'The Nix Mania Has Taken Hold, I Fear'
 date: 2024-11-02
+slug: the-nix-mania-has-taken-hold-i-fear
 tags:
 - tech
 ---

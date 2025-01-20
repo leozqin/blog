@@ -1,5 +1,6 @@
 ---
 title: "Adventures in Virtualization"
+slug: adventures-in-virtualization
 date: 2024-10-22
 tags:
 - tech

@@ -1,6 +1,7 @@
 ---
 title: "Gear Review: Happy Hacking Keyboard Professional 2 (HHKB2)"
 description: I review the hhkb2 - with the benefit of hindsight
+slug: gear-review-happy-hacking-keyboard-professional-2-hhkb2
 date: 2016-06-11
 tldr: It took me six years to come around to this keyboard
 tags:

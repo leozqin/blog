@@ -1,5 +1,6 @@
 ---
 title: "An adventure in sensor configuration with the nct6683 eSIO"
+slug: an-adventure-in-sensor-configuration-with-the-nct6683-esio
 description: So you want to get sensor data in your P-series Thinkstation?
 date: 2024-03-08
 tags:

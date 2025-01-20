@@ -1,5 +1,6 @@
 ---
 title: "Precis - an AI enabled RSS reader"
+slug: precis-an-ai-enabled-rss-reader
 date: 2024-05-21
 tags:
 - tech

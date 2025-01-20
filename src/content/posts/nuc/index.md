@@ -1,6 +1,7 @@
 ---
 title: "All about the SenecaData NUC5i5MYBE"
 description: A slightly non-standard but very inexpensive NUC
+slug: all-about-the-senecadata-nuc5i5mybe
 date: 2023-11-06
 tags:
 - homelab

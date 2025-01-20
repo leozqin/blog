@@ -25,7 +25,7 @@ For example, Calibre's whole metadata management thing is all about making it ea
 
 The other thing that that Local Library does is that it's built to operate in a read-only manner. The episode that triggered this fit of pique was that I was trying Calibre-Web Automated, and it **moved all of my ebooks into a location that it controlled during the ingestion process**.
 
-I'm sure I pressed the wrong button somewhere, but that is an unreasonable default, and an unwarned side effect at that. Maybe everyone is just used to it because that's what Calibre does and always has done, but I've [recently been spending time tinkering with the storage architecture of my homelab](/posts/homelab_3), so maybe I'm just hypersensitive about it.
+I'm sure I pressed the wrong button somewhere, but that is an unreasonable default, and an unwarned side effect at that. Maybe everyone is just used to it because that's what Calibre does and always has done, but I've [recently been spending time tinkering with the storage architecture of my homelab](/posts/homelab-3.0), so maybe I'm just hypersensitive about it.
 
 # Architecture
 Local Library uses a Python backend and serves fully static, server-side rendered pages using Astro.js.

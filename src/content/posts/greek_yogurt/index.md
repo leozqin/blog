@@ -1,6 +1,7 @@
 ---
 title: That time I got obsessed with making Greek Yogurt
 description: A recipe for Greek Yogurt
+slug: that-time-i-got-obsessed-with-making-greek-yogurt
 date: 2015-09-05
 tldr: You're gonna neeed a thermometer
 tags:

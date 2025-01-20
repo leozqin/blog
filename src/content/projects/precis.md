@@ -2,7 +2,7 @@
 name: precis
 order: 1
 link: https://github.com/leozqin/precis
-blogLink: posts/precis
+blogLink: posts/precis-an-ai-enabled-rss-reader
 tech:
 - python
 - tailwind

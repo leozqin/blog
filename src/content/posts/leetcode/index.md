@@ -1,6 +1,7 @@
 ---
 title: "Leetcode doesn't serve anybody well"
 date: 2024-09-28
+slug: leetcode-doesnt-serve-anybody-well
 tags:
 - tech
 ---
