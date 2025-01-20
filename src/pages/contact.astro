@@ -1,0 +1,21 @@
+---
+import * as ContactPage from "../content/contact.md";
+import HeaderMeta from "../components/HeaderMeta.astro";
+import NavHeader from "../components/NavHeader.astro";
+import { ContentClasses } from "../content";
+---
+
+<html lang="en">
+    <head>
+        <title>Leo's Blog</title>
+        <HeaderMeta />
+    </head>
+    <body class="bg-primary">
+        <NavHeader />
+        <section class="text-primary mx-auto w-7/8 md:w-1/2 leading-8 my-8">
+            <div class:list={ContentClasses} class="px-4">
+                <ContactPage.Content />
+            </div>
+        </section>
+    </body>
+</html>

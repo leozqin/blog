@@ -1,18 +1,40 @@
 ---
-import { getCollection, render } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
+import { getCollection, render } from "astro:content";
+import BlogPost from "../../layouts/BlogPost.astro";
+import { experimental_AstroContainer } from "astro/container";
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blogs');
-  return posts.map(post => ({
+  const posts = await getCollection("blogs");
+  return posts.map((post) => ({
     params: { id: post.id },
     props: { post },
   }));
 }
 
+const WORDS_PER_MINUTE = 200;
+
+async function getReadingTime(content: String): Promise<[Number, String]> {
+  const clean = content.replace(/<\/?[^>]+(>|$)/g, "");
+  const numberOfWords = clean.split(/\s/g).length;
+  const amount = Math.ceil(numberOfWords / WORDS_PER_MINUTE);
+  return [numberOfWords, `${amount} min read`];
+}
+
 const { post } = Astro.props;
 const { Content } = await render(post);
+const container = await experimental_AstroContainer.create();
+const [ numberOfWords, readingTime ] = await getReadingTime(
+  await container.renderToString(Content),
+);
 ---
-<BlogPost title={post.data.title} date={post.data.date}>
+
+<BlogPost
+  title={post.data.title}
+  date={post.data.date}
+  wordCount={numberOfWords}
+  readTime={readingTime}
+>
+  <section class="px-2 lg:px-0">
     <Content />
+  </section>
 </BlogPost>

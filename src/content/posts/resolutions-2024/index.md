@@ -1,5 +1,6 @@
 ---
 title: Resolutions for a freer 2025
+slug: resolutions-for-a-freer-2025
 date: 2025-01-01
 tags:
 - tech

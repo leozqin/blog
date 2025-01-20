@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import HeaderMeta from "../../components/HeaderMeta.astro";
+import RedirectWaitingPage from "../../components/RedirectWaitingPage.astro";
+
+export async function getStaticPaths() {
+    const goLinks = await getCollection("go");
+    return goLinks.map((go) => ({
+        params: { id: go.id },
+        props: { go },
+    }));
+}
+
+const { go } = Astro.props;
+const delay = go.data.delay ? go.data.delay : 3
+---
+
+<html lang="en">
+    <head>
+        <title>Redirecting to {go.id}</title>
+        <meta http-equiv="refresh" content=`${delay}; url=${go.data.target}` />
+        <HeaderMeta />
+    </head>
+    <body class="bg-primary">
+        <RedirectWaitingPage title={go.id} target={new URL(go.data.target)} />
+    </body>
+</html>

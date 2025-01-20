@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Button from "./Button.astro";
+import TechBadge from "./TechBadge.astro"
+import { render } from "astro:content";
+
+interface Props {
+    proj: CollectionEntry<"projects">;
+}
+
+const { proj } = Astro.props;
+const { Content } = await render(proj);
+
+const repoLink = new URL(proj.data.link);
+const blogLink = new URL(proj.data.blogLink, Astro.url);
+---
+
+<div class="project-card my-4 p-2">
+    <h1 class="text-2xl project-title">{proj.data.name}</h1>
+    <p><Content /></p>
+    <div class="flex">
+        { proj.data.tech.map((tech) => <TechBadge label={tech} />)}
+    </div>
+    <div class="flex w-3/4 md:w-1/3 mx-auto">
+        <Button label="View Repo" link={repoLink} />
+        <Button label="View Blog" link={blogLink} />
+    </div>
+</div>
+
+<style>
+    .project-card {
+        border-style: solid;
+        border-color: darkgray;
+        border-width: 2px;
+        border-radius: 10px;
+    }
+
+    .project-title {
+        margin-bottom: 0.5em;
+    }
+</style>

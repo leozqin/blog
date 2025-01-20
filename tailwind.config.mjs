@@ -6,8 +6,8 @@ export default {
 		extend: {},
 		colors: {
 			primary: colors.sky[100],
-			secondary: colors.sky[700],
-			code: colors.green[700]
+			secondary: colors.sky[400],
+			code: colors.green[400]
 		},
 		backgroundColor: {
 			primary: colors.gray[900],

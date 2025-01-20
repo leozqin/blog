@@ -1,36 +1,25 @@
-message:
-  - Hello! I'm Leo. I like data and infrastructure. 
-  - I also like writing, and making free and open source software.
-  - Find some interesting pages and posts below!
-projects:
-- project: precis
-  stage: alpha
+- name: precis
   description: an extensible rss reader with AI
   link: https://github.com/leozqin/precis
-  tools:
+  blogLink: https://github.com/leozqin/precis
+  tech:
     - python
     - tailwind
     - docker-compose
-- project: venmo-calculator
-  stage: pre-alpha
+- name: venmo-calculator
   description: a simple app for splitting the bill
   link: https://github.com/leozqin/venmo-calculator
-  tools:
+  blogLink: https://github.com/leozqin/venmo-calculator
+  tech:
     - golang
     - vue.js
     - docker-compose
-- project: local-library
+- name: local-library
   stage: pre-alpha
   description: a dead-simple filesystem-based epub library
   link: https://github.com/leozqin/local-library
-  tools:
+  blogLink: https://github.com/leozqin/local-library
+  tech:
     - python
     - astro.js
     - docker-compose
-social:
-- network: github
-  link: /go/github
-- network: rss
-  link: /index.xml
-- network: email
-  link: /contact

@@ -1,31 +1,27 @@
 ---
 import HeaderMeta from "../components/HeaderMeta.astro";
 import IndexIntro from "../components/IndexIntro.astro";
-import IndexPostListItem from "../components/IndexPostListItem.astro";
-import { getCollection } from "astro:content";
+import BlogList from "../components/BlogList.astro";
+import NavHeader from "../components/NavHeader.astro";
+import IndexProjectCards from "../components/IndexProjectCards.astro";
 
-const blogs = await getCollection("blogs");
+const recentPostsCount = 4;
 ---
 
-<!-- Below is your "component template." It's just HTML, but with
-    some magic sprinkled in to help you build great templates. -->
 <html lang="en">
     <head>
         <title>Leo's Blog</title>
+        <link rel="me" href="https://fedi.gremlin.work/@arch">
         <HeaderMeta />
     </head>
     <body class="bg-primary">
+        <NavHeader />
         <IndexIntro />
-        {
-            blogs
-                .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-                .map((post) => (
-                    <IndexPostListItem
-                        id={post.id}
-                        title={post.data.title}
-                        date={post.data.date}
-                    />
-                ))
-        }
+        <BlogList
+            title="Recent Posts"
+            count={recentPostsCount}
+            showMore={true}
+        />
+        <IndexProjectCards />
     </body>
 </html>
