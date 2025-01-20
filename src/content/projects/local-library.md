@@ -7,5 +7,7 @@ tech:
 - python
 - astro.js
 - docker-compose
+- fastapi
+- typescript
 ---
 A dead-simple filesystem-based epub library. Scans a configured filesystem for epubs, and then does its best to extract metadata and cover art. Works completely fine on a read-only filesystem.

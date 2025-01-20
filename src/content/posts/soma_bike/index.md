@@ -30,7 +30,6 @@ I use a Brooks B67 saddle on a Bontrager seatpost. Nothing special here, just de
 This bike definitely has room to take fenders, but there’s something about the way the bike rides that makes me feel like the most appropriate setup is to remain fenderless. In fact, if Vittoria made the Voyager Hyper in a 41mm or 42mm size I might use those instead. It’s a very upright riding position, and the relaxed feel of definitely makes me feel like summer. Every winter here in Portland, we have one or two weeks where the sun shines like it’s spring before the clouds and rain come back for another month or two. Call it a false spring, but I like to ride this bike then, because it feels just a little like my own personal summer.
 
 ## Pictures
-
-{{< figure src="bike-side.jpg" title="Side view of the bike" >}}
-{{< figure src="grip.jpg" title="Handlebar, grip, and brake lever" >}}
-{{< figure src="tire.jpg" title="The Vittoria Randonneur Hyper in 700-35c" >}}
+![Side view of the bike](./bike-side.jpg)
+![Handlebar, grip, and brake lever](./grip.jpg)
+![The Vittoria Randonneur Hyper in 700-35c](./tire.jpg)

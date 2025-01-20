@@ -55,11 +55,11 @@ I also think that one practical step you can take to make this work is to have c
 # My offer to you
 I believe that Leetcode-style questions are fundamentally flawed as a tool for evaluating technical skills, and I think that working with FOSS is a much better way to assess skills, so I am going to put my money where my mouth is, in this regard.
 
-**First** - as a hiring manager in general, you may use [Precis](https://github.com/leozqin/precis) as the basis for a technical screen in the spirit of what I have described, and I will correspond with you [by email]({{< ref "/contact" >}}) about the structure of the exercise if you desire. I will also give sincere consideration to any PRs you create to contribute changes back to the project. 
+**First** - as a hiring manager in general, you may use [Precis](https://github.com/leozqin/precis) as the basis for a technical screen in the spirit of what I have described, and I will correspond with you [by email](/contact) about the structure of the exercise if you desire. I will also give sincere consideration to any PRs you create to contribute changes back to the project. 
 
-*Optionally*, if the code associated with the pair-coding session makes it into the main branch, I will include a shout-out for both the original developer and either you or your organization (or both) in the merge request and release notes. If you want this, please mention this post in the Pull Request, or [send me an email]({{< ref "/contact" >}}) with a heads up that the PR is coming.
+*Optionally*, if the code associated with the pair-coding session makes it into the main branch, I will include a shout-out for both the original developer and either you or your organization (or both) in the merge request and release notes. If you want this, please mention this post in the Pull Request, or [send me an email](/contact) with a heads up that the PR is coming.
 
-**Second** - as a hiring manager in general, I will correspond with you [by email]({{< ref "/contact" >}}) to help you design a technical screen based on the principles I have outlined in this document, even if Precis is not suitable for your needs.
+**Second** - as a hiring manager in general, I will correspond with you [by email](/contact) to help you design a technical screen based on the principles I have outlined in this document, even if Precis is not suitable for your needs.
 
 **Finally** - as a prospective hiring manager for MYSELF, I will use the principles I have outlined in this document to facilitate a technical screen for my own hiring process, which will contain the following steps (subject to your feedback, of course):
 

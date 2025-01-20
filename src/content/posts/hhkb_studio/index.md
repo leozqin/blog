@@ -6,9 +6,9 @@ tags:
 - tech
 - gear
 ---
-On [my recent trip to japan]({{< ref "/posts/japan_2024" >}}) I had the opportunity to visit one of the few places that sells HHKB products in-store. 
+On [my recent trip to japan](/posts/assorted-takes-japan-2024) I had the opportunity to visit one of the few places that sells HHKB products in-store. 
 
-While I'd [previously had]({{< ref "/posts/hhkb" >}}) experience with the HHKB, it had been quite some time since I was actively engaged with mechanical keyboards as a hobby. For the most part, I had coalesced on the HHKB Pro 2 as my keyboard of choice, the layout worked well for me, and the Topre switches were enjoyable, but I no longer was as discerning when it cames to switches as I used to be.
+While I'd [previously had](/posts/hhkb) experience with the HHKB, it had been quite some time since I was actively engaged with mechanical keyboards as a hobby. For the most part, I had coalesced on the HHKB Pro 2 as my keyboard of choice, the layout worked well for me, and the Topre switches were enjoyable, but I no longer was as discerning when it cames to switches as I used to be.
 
 As a result, while I still largely retained the fundamentals of mechanical keyboard knowledge, the most recent developments and change in the industry had largely passed me by. Having originally written the HHKB Pro 2 review in 2016, up until this year, the last time I had spent much energy thinking about mechanical keyboards was maybe 2019. As I recall, at that time I was using a KBP V60 with Matias Quiet Click switches (is it really any surprise to the repeat reader that I found myself drawn to the esoteric?). That one subsequently developed some switch issues, so I switched it out for a WASD CODE TKL keyboard with Cherry MX Clears (of course, because we were in the office at the time). Soon after Covid happened, I switched to a KBP V60 with Cherry MX Clears (working from home, less space)!
 

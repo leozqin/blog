@@ -19,13 +19,13 @@ I played a round using two player characters - one my usual character, which has
 ## The Results
 My usual character won by one stroke - 57-58 (beating and tying the [lowest rounds of professional golf ever](https://en.wikipedia.org/wiki/Lowest_rounds_of_golf))
 
-{{< figure src="final.jpg" title="The final results from the round - my usual character won 57-58" >}}
+![The final results from the round - my usual character won 57-58](./final.jpg)
 
 What's interesting to note here is that the default character had a worse rate of Fairways In Regulation (FIR) (by 7 percentage points) and Green in Regulation (GIR) (by 11 percentage points), but a much lower Putts per Hole (PPH) - 1.17 vs 1.28.
 
 This bears out my experience; I definitely had a few putting disasters using my usual character. On the flip side, the default character had an great short game day - so immense that if you look at the scorecard you'll see that they had two hole-outs - one for an Ace!
 
-{{< figure src="scorecard.jpg" title="The scorecard from the round" >}}
+![The scorecard from the round](./scorecard.jpg)
 
 By comparison, my usual character had a measly single hole-out (has such a thing ever been said) - but picked up birdies vs par on the front nine twice! These made the difference.
 

@@ -7,7 +7,7 @@ interface Props {
 const {label, link} = Astro.props
 ---
 <button class="my-2 px-2 py-1 mx-auto">
-    <a href={link}>{label}</a>
+    <a href={new URL(link, Astro.site)}>{label}</a>
 </button>
 
 <style>

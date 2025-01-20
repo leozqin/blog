@@ -1,0 +1,37 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="mx-auto">
+    <button class="badge">
+        <a
+            class="badge-text flex flex-row gap-2 place-items-center grow-0"
+            href={new URL("posts", Astro.site)}
+            ><Icon name="mdi:pencil-outline" />Blogger</a
+        >
+    </button>
+</div>
+
+<style>
+    .badge {
+        min-width: 120px;
+        max-width: 120px;
+        min-height: 20px;
+        max-height: 20px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 4px;
+        color: white;
+        border-width: 0.25px;
+        background-color: #023020;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .badge-text {
+        font-family: monospace;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 auto;
+    }
+</style>

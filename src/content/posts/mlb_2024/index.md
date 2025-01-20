@@ -15,7 +15,7 @@ The term "Marginalia" refers to notes, diagrams, and decoration in the margins o
 
 My first game of the year, and only Dodgers game, was probably also the most exciting. The immediate context of the game was, of course, the Shohei Ohtani signing. I had watched quite a few Angels games with him and he never failed to disappoint. Even when only playing DH (and not pitching), every time he came up to bat, everyone knew that something exciting was going to happen. And.. it kind of did? He reached twice, first on a pitching error then on a walk. The pitching error in particular was exciting because it went to review.
 
-{{< figure src="dodgers.jpg" title="Hawaiian Shirt Night at Dodgers Park" >}}
+![Hawaiian Shirt Night at Dodgers Park](./dodgers.jpg)
 
 We should talk about that walk though, because that walk loaded the bases to set up indisputably the play of the game, a grand slam by Freddie Freeman. Going into the game, I had said that the optimal outcome would be to see a grand slam. Low likelihood, but high reward - and yet, we did hit on that reward, immediately followed by a solo homer by Will Smith. After that, the outcome of the game was rarely in doubt.
 
@@ -62,7 +62,7 @@ When I learned last year that the Giants and Rockies had planned a scheduled dou
 
 At the same time, I had heard that the Giants' stadium is one of the nicest in baseball, and I was overdue a trip to SF anyway. So - when I found a great deal on tickets (Section 125, Row 2), I jumped at the chance.
 
-{{< figure src="giants_gate.jpg" title="Oracle Park, Willy Mays Gate" >}}
+![Oracle Park, Willy Mays Gate](./giants_gate.jpg)
 
 I flew into SF the day before, giving myself a full day to explore and take in the city. I had already spent extensive amounts of time in the Financial District and SOMA, and a bit in Chinatown, so this time around I prioritized the Castro and Hayes Valley, heading there on the BART straight from the airport after a 6am flight.
 
@@ -74,7 +74,7 @@ My general impression was that Topo and Cotopaxi were interesting, but didn't ha
 
 Anyway, the day of the game(s), I took a similar route of walking to the game. I spent the morning in the Ferry Building, enjoying the Farmers Market, and then I made my way towards Oracle Park. While meandering around the Ferry Building, I realized that I had bought no jackets at all, and the weather was unlikely to cooperate with my fashion choice. So, I found what I perceived to be the nicest Gap in the world and bought a hoodie and a jacket. I later learned that the Gap corporate offices were above the stores on this block. I also dropped in on the Brat wall and Black Hammer Brewing - which had a number of extremely competent beers, including a dry-hopped lager that I really enjoyed.
 
-{{< figure src="brat_wall.jpg" title="The Brat Wall" >}}
+![The Brat Wall](./brat_wall.jpg)
 
 The game itself was memorable the most because Blake Snell threw 15 strikeouts - a career high! Except for Matt Chapman, the SF offense was a little sluggish, but you can afford to be sluggish when Blake Snell throws 15 strikeouts for you.
 
@@ -91,7 +91,7 @@ This game was scheduled to start 45 minutes after the end of the previous one. I
 
 The game itself was unimpressive - a blowout, with some scoring early, and then the Giants blew the game open in the fifth with three scores.
 
-{{< figure src="giants.jpg" title="Oracle Park" >}}
+![Oracle Park](./giants.jpg)
 
 Midway through the game, the stadium displayed a message saying that BART schedules were disrupted (audible groans from much of the audience). I didn't think much of it until after the game, when I stepped out of the stadium and saw not one or two, but three different trains for the same line roll up to the station at the same time. Very beneficial for my goal of getting back to my hotel, personally, but not ideal for the overall flow of the system. As it turned out, there had been [an electrical fire in Oakland](https://abc7news.com/post/bart-experiencing-major-delay-system-wide-due-equipment/15106845/) that was the root cause of the schedule issues.
 
@@ -110,7 +110,7 @@ One of the highlights of this game was Caden Dana's MLB debut - and he got the w
 
 Another highlight - Ben Joyce. A few days before this, he closed a game against the Dodgers with a strikeout on a 105 mph fastball! Truly an incredible pitch, and when he came out from the bullpen to close, I was quite excited. He was regularly throwing in the 102-103 mph range, and was incredible to see. He closed out the game with a strikeout.
 
-A [Japan trip throwback](../assorted-takes-japan-2024) - several locations of The Corner Store in Angels Stadium have Pocari Sweat, and on this particular day they were running a buy-one-get-one-free promotion. I can't imagine that they sell too many of them (I didn't take advantage), but I suppose at BOGO pricing it's basically the same as buying one at normal price.
+A [Japan trip throwback](/posts/assorted-takes-japan-2024) - several locations of The Corner Store in Angels Stadium have Pocari Sweat, and on this particular day they were running a buy-one-get-one-free promotion. I can't imagine that they sell too many of them (I didn't take advantage), but I suppose at BOGO pricing it's basically the same as buying one at normal price.
 
 # September 15 - Astros at Angels
 - First Pitch: 1:07pm
@@ -134,7 +134,7 @@ This was the second of the free tickets from the Angels 5K and Fun Run. The main
 
 In the end, though, the game was competitive - the White Sox went up 1 in the 4th, then the Angels tied it up in the 8th, eventually going 13 innings with a walk-off RBI for Jordyn Adams (apparently voted the best athlete in the Angels organization between 2021 and 2023 - even in the minors more athletic than Shohei Ohtani!).
 
-{{< figure src="angels.jpg" title="A very empty Angels Stadium" >}}
+![A very empty Angels Stadium"](./angels.jpg)
 
 The first order effect of 4 overtime innings was that it was rush hour when the game let out, and it took me about 90 minutes to get back home (after only 40 to get there!). It was good to see the Rally Monkey make an appearance though, I don't remember it making an appearance in any of the other games I attended, although it must have come up, seeing the garbage time home runs to make the game closer?
 
@@ -142,6 +142,6 @@ Another odd thing about the game (being on a Wednesday afternoon) was that there
 
 Come to think, there were quite a few children in attendance, either with groups or simply with their parents, seeing as how most cheers came an octave higher than I was used to. Perhaps today was a holiday or early dismissal day for one or more districts in the area.
 
-{{< figure src="horrifying_filter.jpg" title="A terrifying video filter put upon a child" >}}
+![A terrifying video filter put upon a child](./horrifying_filter.jpg)
 
 For the first time in about a year, I had a Big A burger, which was fine (and just as I remembered it). I also had a Halo Light by Brewery X - a very enjoyable lager that I often get. Early in the day, I had gone on the search for the Draft Pick stand, because they apparently had some beers from Chapman Brewing on tap - but, despite the guide saying it should be in Section 240, it was nowhere to be found! Such a shame, I remember being able to try quite a few different beers last year at a Dodgers game from a similar stand.

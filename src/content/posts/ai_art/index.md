@@ -11,7 +11,8 @@ I think it's accurate to say that [I'm an AI skeptic](../why-does-ai-make-me-fee
 
 I've definitely learned quite a few things, and I guess this is the post where I talk about them and show off some images of animals wearing clothes that I generated (apparently, that's what I gravitate towards).
 
-{{< figure src="golden_retriever_20240121140537.jpg" title="Such a good boy!" >}}
+![Such a good boy!](./golden_retriever_20240121140537.jpg)
+
 ```yml
 negative_prompt: ugly, poor quality, bad anatomy, bad hands, text, error, missing
   fingers, extra digit, fewer digits, cropped, worst quality, low quality, jpeg artifacts,
@@ -28,7 +29,8 @@ That got me on the track of finding a computer with a GPU - after a brief dallia
 
 It was at this point when I realized how much work learning a new chatbot framework would be. I was in a discovery mood rather than an optimization one, so I called it a day, threw $10 at the OpenAI API and implemented the [existing ChatGPT Maubot plugin](https://github.com/williamkray/maubot-chatgpt). I'll come back to this eventually.
 
-{{< figure src="otter_20240121132050.jpg" title="This is the least thirsty of otters that I generated, but he's still an absolute unit" >}}
+![This is the least thirsty of otters that I generated, but he's still an absolute unit](./otter_20240121132050.jpg)
+
 ```yml
 negative_prompt: ugly, poor quality, bad anatomy, bad hands, text, error, missing
   fingers, extra digit, fewer digits, cropped, worst quality, low quality, jpeg artifacts,
@@ -74,13 +76,13 @@ prompt: otter, cowboy hat, cowboy boots, eating pizza, wallace and gromit, clay,
 ```
 
 SSD-1B:
-{{< figure src="otter_ssd_1b.jpg" title="More squirrel than otter, but clearly clay-like and recognizable" >}}
+![More squirrel than otter, but clearly clay-like and recognizable](./otter_ssd_1b.jpg)
 
 SD-1.5:
-{{< figure src="otter_sd15.jpg" title="An absolute mess including a three eye'd pig on the left side?" >}}
+![An absolute mess including a three eye'd pig on the left side?](./otter_sd15.jpg)
 
 SD-2.1:
-{{< figure src="otter_sd21.jpg" title="Nightmare fuel, boots on the pizza, some kind of round growth on the nose" >}}
+![Nightmare fuel, boots on the pizza, some kind of round growth on the nose](./otter_sd21.jpg)
 
 # How it's going
 ## Code Optimizations
@@ -96,7 +98,7 @@ I also implemented Prompt Embeddings, both for the negative and positive prompts
 
 Finally, I defaulted the image size to 768 x 768 and inference steps to 30. All in all, this results in about 1 iteration per second, or about 30 seconds to generate an image. My first attempts with SSD-1B took 5 minutes per image, so not bad!
 
-{{< figure src="owl_20240121172113.jpg" title="We'll talk about this later but watercolor does such a good job of hiding flaws" >}}
+![We'll talk about this later but watercolor does such a good job of hiding flaws](./owl_20240121172113.jpg)
 ```yml
 negative_prompt: cars, ugly, poor quality, bad anatomy, bad hands, text, error, missing
   fingers, extra digit, fewer digits, cropped, worst quality, low quality, jpeg artifacts,
@@ -125,15 +127,14 @@ args = {
     "negative_prompt": "cars, ugly, poor quality, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, jpeg artifacts, signature, watermark, username, artist name",
 }
 ```
-{{< figure src="owl_20240121172434.jpg" title="The result of the above" >}}
-
+![The result of the above](./owl_20240121172434.jpg)
 
 ## Learnings
 Throughout the process, I've definitely learned a few things about AI art in general, the SSD-1B model in particular, and myself. In no particular order...
 
 Style is SO important - it lets you hide the artifacts where the denoise process hasn't done a good job. Some styles are better than others - `photorealistic` I've found is quite bad at hiding flaws, but `watercolor` does an excellent job. `line drawing` is also pretty good.
 
-{{< figure src="otter_20240121152300.jpg" title="Quoth my sister - 'this otter would ruin my life.'" >}}
+![Quoth my sister - 'this otter would ruin my life.](./otter_20240121152300.jpg)
 ```yml
 negative_prompt: bokeh, short depth of field, ugly, poor quality, bad anatomy, bad
   hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality,
@@ -144,7 +145,8 @@ prompt: otter, normcore, cozy, daytime alleyway, anthropomorphic, street photogr
 
 I don't find humans to be an interesting subject for AI art, at all. I find myself drawn to animals with clothes. Animals with pants, especially, are a unique challenge - the `anthropomorphic` or `humanoid` prompts do an ok of encouraging these animals to put on pants. 
 
-{{< figure src="dog_20240121141009.jpg" title="'Sir - could you please put on pants?'" >}}
+!['Sir - could you please put on pants?'](./dog_20240121141009.jpg)
+
 ```yml
 negative_prompt: ugly, poor quality, bad anatomy, bad hands, text, error, missing
   fingers, extra digit, fewer digits, cropped, worst quality, low quality, jpeg artifacts,
@@ -155,7 +157,8 @@ prompt: greyhound, sitting on chair, wearing clothes, humanoid, anthropomorphic,
 
 The intuition for how to resolve blurriness in prompts borders on superstition sometimes; I've seen people say things like "all the 8k images in the training set were good, so I put 8k as a prompt to bring that out"
 
-{{< figure src="dog_20240120174741.jpg" title="Another very good boy" >}}
+![Another very good boy](./dog_20240120174741.jpg)
+
 ```yml
 negative_prompt: ugly, blurry, poor quality, rounded edges, bad anatomy, bad hands,
   text, error, missing fingers, extra digit, fewer digits, cropped, worst quality,
@@ -166,7 +169,8 @@ prompt: A happy dog wearing 2000s era fashion. 16 bit drawn style bipedal less f
 ```
 
 Are otters hot? Did I mention how difficult it is to get animals to wear clothes?
-{{< figure src="otter_20240121133859.jpg" title="Daddy" >}}
+![Daddy](./otter_20240121133859.jpg)
+
 ```yml
 negative_prompt: ugly, poor quality, bad anatomy, bad hands, text, error, missing
   fingers, extra digit, fewer digits, cropped, worst quality, low quality, jpeg artifacts,
@@ -176,10 +180,14 @@ prompt: otter, cowboy hat, boots, denim jacket, coffee shop, humanoid, 16 bit, S
 ```
 
 # Some other images I like
+![sea otter, cowboy hat, cowboy boots, denim jacket, eating pizza, anthropomorphic, 8k, watercolor painting](./otter_20240121131204.jpg)
 
-{{< figure src="otter_20240121131204.jpg" title="sea otter, cowboy hat, cowboy boots, denim jacket, eating pizza, anthropomorphic, 8k, watercolor painting" >}}
-{{< figure src="otter_20240121152836.jpg" title="otter, normcore, cozy, daytime alleyway, anthropomorphism, cubism" >}}
-{{< figure src="otter_20240121153359.jpg" title="otter, normcore, cozy, daytime alleyway, anthropomorphism, marker, drawing, high quality" >}}
-{{< figure src="otter_20240121154229.jpg" title="otter, t-shirt, cargo pants, normcore, cozy, night time, evening alleyway, city in background, backlit, anthropomorphism, marker, drawing, backlit, high quality" >}}
-{{< figure src="owl_20240121171543.jpg" title="owl,(anthropomorphic)++,carrying groceries,(headphones)++,day time,busy city,street,normcore,cozy,happy,pop art,backlit,high quality" >}}
-{{< figure src="owl_20240121171859.jpg" title="owl,anthropomorphic,groceries,(headphones)++,(sunset)++,busy city street,normcore,cozy,happy,pop art,backlit,high quality" >}}
+![otter, normcore, cozy, daytime alleyway, anthropomorphism, cubism](./otter_20240121152836.jpg)
+
+![otter, normcore, cozy, daytime alleyway, anthropomorphism, marker, drawing, high quality](./otter_20240121153359.jpg)
+
+![otter, t-shirt, cargo pants, normcore, cozy, night time, evening alleyway, city in background, backlit, anthropomorphism, marker, drawing, backlit, high quality](./otter_20240121154229.jpg)
+
+![owl,(anthropomorphic)++,carrying groceries,(headphones)++,day time,busy city,street,normcore,cozy,happy,pop art,backlit,high quality](./owl_20240121171543.jpg)
+
+![owl,anthropomorphic,groceries,(headphones)++,(sunset)++,busy city street,normcore,cozy,happy,pop art,backlit,high quality](./owl_20240121171859.jpg)

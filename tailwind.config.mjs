@@ -7,11 +7,11 @@ export default {
 		colors: {
 			primary: colors.sky[100],
 			secondary: colors.sky[400],
-			code: colors.green[400]
+			code: "#8dc6f9" // github dark high contrast
 		},
 		backgroundColor: {
 			primary: colors.gray[900],
-			code: colors.black
+			code: "#0a0c10" // github dark high contrast
 		}
 	},
 	plugins: [require('@tailwindcss/typography')],
