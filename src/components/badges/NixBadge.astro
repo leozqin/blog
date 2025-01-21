@@ -1,7 +1,14 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <div class="mx-auto">
-    <button class="badge">
-        <a class="badge-text" href="https://fedipact.online/">⁂ Fedipact</a>
-    </button>
+    <span class="badge">
+        <span
+            class="badge-text flex flex-row gap-2 place-items-center grow-0"
+            ><Icon name="nix" />NixOS</span
+        >
+    </span>
 </div>
 
 <style>
@@ -13,9 +20,8 @@
         border-style: solid;
         border-color: white;
         border-radius: 4px;
-        color: white;
+        color: darkslategray;
         border-width: 0.25px;
-        animation: fedipactFade 8s infinite;
         display: inline-flex;
         justify-content: center;
     }
@@ -25,20 +31,7 @@
         text-align: center;
         vertical-align: middle;
         margin: 0 auto;
-    }
-
-    @keyframes fedipactFade {
-        0% {
-            background-color: black;
-            color: white;
-        }
-        50% {
-            background-color: #ff69b4;
-            color: black;
-        }
-        100% {
-            background-color: black;
-            color: white;
-        }
+        font-size: small;
+        color: white;
     }
 </style>

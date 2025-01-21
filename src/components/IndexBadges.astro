@@ -9,17 +9,23 @@ import CSSBadge from "./badges/CSSBadge.astro";
 import GithubBadge from "./badges/GithubBadge.astro"
 import MarkdownBadge from "./badges/MarkdownBadge.astro"
 import TypescriptBadge from "./badges/TypescriptBadge.astro"
+import NodeBadge from "./badges/NodeBadge.astro"
+import PunchBadge from "./badges/PunchBadge.astro"
+import NixBadge from "./badges/NixBadge.astro"
 ---
 
 <section class="w-7/8 lg:w-2/5 flex gap-4 flex-wrap my-6 mx-4 lg:mx-auto items-center">
+    <NixBadge />
     <AstroBadge />
-    <FedipactBadge />
+    <NodeBadge />
+    <TypescriptBadge />
     <RSSBadge />
+    <MarkdownBadge />
     <CreativeCommons />
     <MastodonBadge />
     <BlogBadge />
     <CSSBadge />
     <GithubBadge />
-    <MarkdownBadge />
-    <TypescriptBadge />
+    <FedipactBadge />
+    <PunchBadge />
 </section>

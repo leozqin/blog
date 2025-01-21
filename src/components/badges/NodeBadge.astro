@@ -1,0 +1,36 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="mx-auto">
+    <span class="badge">
+        <span
+            class="badge-text flex flex-row gap-2 place-items-center grow-0"
+            ><Icon name="node" />NodeJS 22</span
+        >
+    </span>
+</div>
+
+<style>
+    .badge {
+        min-width: 120px;
+        max-width: 120px;
+        min-height: 20px;
+        max-height: 20px;
+        border-style: solid;
+        border-color: #5cad47;
+        border-radius: 4px;
+        background-color: #333333;
+        border-width: 0.25px;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .badge-text {
+        font-family: monospace;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0 auto;
+        color: white;
+    }
+</style>
