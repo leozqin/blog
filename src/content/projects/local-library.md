@@ -9,5 +9,6 @@ tech:
 - docker-compose
 - fastapi
 - typescript
+- tinydb
 ---
 A dead-simple filesystem-based epub library. Scans a configured filesystem for epubs, and then does its best to extract metadata and cover art. Works completely fine on a read-only filesystem.
