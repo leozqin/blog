@@ -1,0 +1,60 @@
+---
+import FedipactBadge from "./badges/FedipactBadge.astro";
+import AstroBadge from "./badges/AstroBadge.astro"
+import RSSBadge from "./badges/RSSBadge.astro";
+import CCBYNCBadge from "./badges/CCBYNCBadge.astro";
+import CC0Badge from "./badges/CC0Badge.astro";
+import MastodonBadge from "./badges/MastodonBadge.astro";
+import BlogBadge from "./badges/BlogBadge.astro"
+import CSSBadge from "./badges/CSSBadge.astro";
+import GithubBadge from "./badges/GithubBadge.astro"
+import MarkdownBadge from "./badges/MarkdownBadge.astro"
+import TypescriptBadge from "./badges/TypescriptBadge.astro"
+import NodeBadge from "./badges/NodeBadge.astro"
+import PunchBadge from "./badges/PunchBadge.astro"
+import NixBadge from "./badges/NixBadge.astro"
+import UbuntuBadge from "./badges/UbuntuBadge.astro"
+import ArchBadge from "./badges/ArchBadge.astro"
+---
+
+<section class="w-7/8 lg:w-2/5 mx-auto w-auto">
+    <h1 class="text-primary text-2xl text-center">Linux</h1>
+    <div class="flex gap-4 flex-wrap my-6 mx-4 lg:mx-auto items-center justify-items-center">
+        <NixBadge />
+        <UbuntuBadge />
+        <ArchBadge />
+    </div>
+</section>
+<section class="w-7/8 lg:w-2/5 mx-auto w-auto">
+    <h1 class="text-primary text-2xl text-center">Technologies</h1>
+    <div class="flex gap-4 flex-wrap my-6 mx-4 lg:mx-auto items-center">
+        <AstroBadge />
+        <NodeBadge />
+        <TypescriptBadge />
+        <RSSBadge />
+        <MarkdownBadge />
+        <GithubBadge />
+    </div>
+</section>
+<section class="w-7/8 lg:w-2/5 mx-auto w-auto">
+    <h1 class="text-primary text-2xl text-center">Creative Commons Licenses</h1>
+    <div class="flex gap-4 flex-wrap my-6 mx-4 lg:mx-auto items-center">
+        <CCBYNCBadge />
+        <CC0Badge />
+    </div>
+</section>
+<section class="w-7/8 lg:w-2/5 mx-auto w-auto">
+    <h1 class="text-primary text-2xl text-center">Fediverse</h1>
+    <div class="flex gap-4 flex-wrap my-6 mx-4 lg:mx-auto items-center">
+        <MastodonBadge />
+        <FedipactBadge />
+    </div>
+</section>
+<section class="w-7/8 lg:w-2/5 mx-auto w-auto">
+    <h1 class="text-primary text-2xl text-center">Other</h1>
+    <div class="flex gap-4 flex-wrap my-6 mx-4 lg:mx-auto items-center">
+        <BlogBadge />
+        <CSSBadge />
+        <PunchBadge />
+    </div>
+</section>
