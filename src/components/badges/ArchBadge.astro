@@ -3,13 +3,12 @@ import { Icon } from "astro-icon/components";
 ---
 
 <div class="mx-auto">
-    <button class="badge">
-        <a
+    <span class="badge">
+        <span
             class="badge-text flex flex-row gap-2 place-items-center grow-0"
-            href="https://astro.build"
-            ><Icon name="astro" />Astro.js</a
+            ><Icon name="arch" />Arch (btw)</span
         >
-    </button>
+    </span>
 </div>
 
 <style>
@@ -19,11 +18,10 @@ import { Icon } from "astro-icon/components";
         min-height: 20px;
         max-height: 20px;
         border-style: solid;
-        border-color: #ee40f0;
+        border-color: #1793d1;
         border-radius: 4px;
-        color: #ee40f0;
+        background-color: #4d4d4d;
         border-width: 0.25px;
-        background-color: black;
         display: inline-flex;
         justify-content: center;
     }
@@ -33,5 +31,6 @@ import { Icon } from "astro-icon/components";
         text-align: center;
         vertical-align: middle;
         margin: 0 auto;
+        color: white;
     }
 </style>
