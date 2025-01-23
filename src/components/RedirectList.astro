@@ -4,7 +4,9 @@ import { getCollection } from "astro:content";
 const goLinks = await getCollection("go");
 ---
 
-<section class="text-primary mx-auto w-7/8 lg:w-1/2 leading-8 px-4 my-2 text-center">
+<section
+    class="text-primary mx-auto w-7/8 lg:w-1/2 leading-8 px-4 my-2 text-center"
+>
     <h1 class="text-3xl my-2">Link Dump</h1>
     <ul>
         {
@@ -12,7 +14,12 @@ const goLinks = await getCollection("go");
                 .sort((a, b) => a.id.localeCompare(b.id))
                 .map((go) => (
                     <li>
-                        <a href={go.data.target}>{go.id}</a>
+                        <a
+                            class="text-secondary underline decoration-dashed underline-offset-4 hover:text-primary"
+                            href={go.data.target}
+                        >
+                            {go.id} - {go.data.description}
+                        </a>
                     </li>
                 ))
         }

@@ -24,7 +24,8 @@ const go = defineCollection({
     loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/go" }),
     schema: z.object({
         target: z.string().url(),
-        delay: z.number().optional()
+        delay: z.number().optional(),
+        description: z.string()
     })
 })
 
