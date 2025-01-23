@@ -3,12 +3,13 @@ import { Icon } from "astro-icon/components";
 ---
 
 <div class="mx-auto">
-    <span class="badge">
-        <span
+    <button class="badge">
+        <a
             class="badge-text flex flex-row gap-2 place-items-center grow-0"
-            ><Icon name="arch" />Arch (btw)</span
+            href="https://fedi.gremlin.work/@arch"
+            ><Icon name="lemmy" />Lemmy</a
         >
-    </span>
+    </button>
 </div>
 
 <style>
@@ -18,21 +19,19 @@ import { Icon } from "astro-icon/components";
         min-height: 20px;
         max-height: 20px;
         border-style: solid;
-        border-color: #1793d1;
+        border-color: white;
         border-radius: 4px;
-        background-color: #4d4d4d;
+        color: white;
         border-width: 0.25px;
+        background-color: #1a1c1d;
         display: inline-flex;
         justify-content: center;
     }
 
     .badge-text {
-        font-family: serif;
-        font-size: small;
+        font-family: monospace;
         text-align: center;
         vertical-align: middle;
         margin: 0 auto;
-        color: white;
-        letter-spacing: -0.5px;
     }
 </style>
