@@ -54,7 +54,7 @@ Whereas standard keyboards have three keys to the left of the spacebar and four 
 
 This seems like a compromise in functionality. While the placement of the Control key makes it much easier to use control in conjunction with keys in row two, it also makes it unreasonable to use control with the rightmost keys in row four without moving your hand. When it comes to row four, I typically will be using CTRL-C and CTRL-V, for copy and paste, respectively. Having to move my hand and reset my hand breaks the efficiency of the maneuver, whereas with a standard layout I am able to use my left pinkie to depress control and my middle or pointer fingers to press C or V. Pressing X, for cut, is even harder because it requires the pointer finger to swing inward of its resting position.
 
-![The rear panel of the hhkb](./hhkb_back.jpeg)
+![The rear panel of the HHKB - there are two USB-A ports, a micro-USB port, and a set of dip switches. The keyboard sits on top of a black cloth mat.](./hhkb_back.jpeg)
 
 ## Build Quality and Typing Experience
 The HHKB2 has an ABS plastic case. It is available in dark grey (functionally black) or white. Compared to most keyboards, the build quality is noticeably superior. The seams between the bottom and top halves of the case, while still visible, are finer than the keyboards that come with most computers. Their visibility is a bit accentuated by the fact that effort is made to hide them – the seam runs almost exactly half way between the bottom and top of the keyboard. Usually, manufacturers will try to place the seam along a hidden area of the keyboard, such that even thought it is present, the seam is not visible. Compared to other enthusiast-grade mechanical keyboards (my two references being the Leopold FC750 and Vortex Pok3r), the build quality is middling at best. Not bad, but the others are just quite good.
@@ -70,7 +70,7 @@ My take on the switches is that they’re remarkably similar to run-of-the-mill 
 
 The return action on the switches is also noticeably different from Cherry-type switches. Cherry switches reset linearly after bottoming out, but Topre switches seem to bounce back more quickly. As they return to the top of their actuation range, they emit a satisfying “thock” sound. The sound from bottoming out the switch is actually negligible. The thock can be silenced by placing O-Rings or dental bands at the top of the slider range itself, which results in an exceptionally quiet keyboard. However, the unsilenced Topre switch is already noticeably quieter than a typical rubber dome keyboard, and for me the thock adds an additional degree of feedback.
 
-![The front of the hhkb, viewed on the diagonal](./hhkb_front.jpeg)
+![The front of the hhkb, viewed on the diagonal - the keycaps have no lettering on them. The keyboard is on top of a black mat with a black foam wrist rest in front of it.](./hhkb_front.jpeg)
 
 ### About the Blank Keycaps
 

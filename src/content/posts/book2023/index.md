@@ -14,7 +14,7 @@ Finally, before we get started - if you haven't heard of Storygraph before, I hi
 
 # My Favorite Books of 2023, In No Particular Order
 ## Light From Uncommon Stars, by Ryka Aoki
-![The cover of Light From Uncommon Stars, by Ryka Aoki](./Light_From_Uncommon_Stars.jpg)
+![The cover of Light From Uncommon Stars, by Ryka Aoki - a red and white carp swimming through a night sky filled with stars.](./Light_From_Uncommon_Stars.jpg)
 
 As I wrote above, the most common genres that I read were LGBTQIA+, Science Fiction, and Contemporary, and this book is a LGBTQIA+ Science Fiction novel in a contemporary setting. Specifically, it's a queer and trans story with diverse Asian American (Vietnamese, Japanese, Maybe-Southeast-Asian-but-actually-extraterrestrial-refugees) characters set in the San Gabriel Valley of the LA metropolitan area (this also happens to be exactly where I live). Oh and also, magic is real, the devil is real, and aliens are real. Basically, there was never a chance that I wouldn't enjoy this story.
 
@@ -23,7 +23,7 @@ That aside, what I find the most enjoyable about this book is how well it manage
 [Find it on Storygraph](https://app.thestorygraph.com/books/35fdf605-50d4-467a-93fd-a255f2cb24ae)
 
 ## The Tragedy of Heterosexuality, by Jane Ward
-![The cover of The Tragedy of Heterosexuality, by Jane Ward](./tragedy_of_heterosexuality.jpg)
+![The cover of The Tragedy of Heterosexuality, by Jane Ward - a white heart with a crack down the middle on a plain black background.](./tragedy_of_heterosexuality.jpg)
 
 This book, written by [Professor Jane Ward at UCSB](https://www.janewardphd.com/), read to me as an outside observer's report on what heterosexuality is, why it is that way, and if it does needs to be like that. Feeling myself often to be an outside observer of the oddness of heterosexuality, I enjoyed reading this field report for the way its observations on the ways that heterosexuality can be absurd, performative, and yes, often tragic. 
 
@@ -32,7 +32,7 @@ In particular, the book has a very interesting segment about the seduction indus
 [Find it on Storygraph](https://app.thestorygraph.com/books/d82ad908-846f-4f19-b476-66d61a1ad7f5)
 
 ## Project Hail Mary, by Andy Weir
-![The cover of Project Hail Mary, by Andy Weir](./project_hail_mary.jpg)
+![The cover of Project Hail Mary, by Andy Weir - an astronaut falling through space with a loose tether trailing behind them.](./project_hail_mary.jpg)
 
 A few months ago, I found myself compelled to re-watch "The Martian" starring Matt Damon and adapted from another of Andy Weir's books. This was a really odd decision, as I almost never re-watch movies, but it lead me to remember the name when I came across Project Hail Mary. This being the first book of his that I read, I was surprised (pleasantly) at the ease with which the first-person observational form of writing flowed. 
 

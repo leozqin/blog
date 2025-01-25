@@ -12,7 +12,7 @@ This was far-and-away the most-read piece from the old site. It SEOs extremely w
 ## How Many Murderers Will You Walk Past? 
 Yesterday, as I was browsing Facebook, I saw a picture stating that “The average person walks past a murder 36 times in their life.” Surely, this is an extraordinary claim, and extraordinary claims require extraordinary evidence. If there’s one thing that clickbait pictures from 9gag do not contain, it’s extraordinary evidence. So, let’s test their claim. How many murderers will an average person walk past in their life?
 
-![The meme in question](./9gag-murderers.jpg)
+![The meme in question - bloody axe on a black background.](./9gag-murderers.jpg)
 
 First, let’s unpack that question:
 

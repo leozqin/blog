@@ -23,10 +23,10 @@ At the same time, cycletrucks are able to carry more than porteur-like setups be
 
 The platform material choice is quite interesting because it lets you have a platform without any gaps (as porteur racks and baskets have) that is low-profile (unlike wooden platforms), but still reasonably light and tough. The Halsted also has accessory panels that let you form a basket on top of the platform. It rattles a little, but it’s a clever solution that does a good job of keeping things corralled.
 
-![Three-quarters view of the Civia Halsted](./halsted-front.jpeg)
+![Three-quarters view of the Civia Halsted - white bike with swept-back handlebars, a large rear wheel and a smaller front wheel; above the front wheel is a large plastic basket.](./halsted-front.jpeg)
 
 I’ve got my Halsted set up with a Brooks B67 saddle (this picture is a Flyer), Ergon racing grips, and a riser stem. Civia only made the frame in one size and, while it’s of appropriate size for someone of my height, it could certainly do better. Unfortunately, adding a longer stem might start intruding into the cargo area. For the moment, I am suited pretty well by the bar height, but if that changes in the future, I might have to get creative. It’s an interesting idiosyncrasy introduced by the decision to produce only one size of frame.
 
 I rode the bike nearly 30 miles today, for Northeast Portland Sunday Parkways. I was pretty sore by the end of the ride, which I think has helped me understand the upper bounds of how far this bike can be ridden. It’s not that the bike is excessively heavy, but it’s so much heavier than anything else I ride that I forget to pace myself correctly and end up running out of sugar fairly quickly. This is also my first bike that has disk brakes (it has a disk in the front, and a v-brake rear). It seems to have developed a bit of a squeak, so I guess I will be teaching myself about how to work with mechanical disk brakes!
 
-![The front wheel of the Civia Halsted, with Kenda tire and mechanically actuated disk brake](./halsted-brakes.jpeg)
+![The front wheel of the Civia Halsted, with black Kenda tire and mechanically actuated disk brake](./halsted-brakes.jpeg)
