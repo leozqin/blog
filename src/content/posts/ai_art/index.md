@@ -11,7 +11,7 @@ I think it's accurate to say that [I'm an AI skeptic](../why-does-ai-make-me-fee
 
 I've definitely learned quite a few things, and I guess this is the post where I talk about them and show off some images of animals wearing clothes that I generated (apparently, that's what I gravitate towards).
 
-![Such a good boy!](./golden_retriever_20240121140537.jpg)
+![A golden retriever sitting on a golden throne wearing lilac robes in the style of an oil painting.](./golden_retriever_20240121140537.jpg)
 
 ```yml
 negative_prompt: ugly, poor quality, bad anatomy, bad hands, text, error, missing
@@ -29,7 +29,7 @@ That got me on the track of finding a computer with a GPU - after a brief dallia
 
 It was at this point when I realized how much work learning a new chatbot framework would be. I was in a discovery mood rather than an optimization one, so I called it a day, threw $10 at the OpenAI API and implemented the [existing ChatGPT Maubot plugin](https://github.com/williamkray/maubot-chatgpt). I'll come back to this eventually.
 
-![This is the least thirsty of otters that I generated, but he's still an absolute unit](./otter_20240121132050.jpg)
+![An otter wearing a denim jacket and cowboy hat holding a pizza.](./otter_20240121132050.jpg)
 
 ```yml
 negative_prompt: ugly, poor quality, bad anatomy, bad hands, text, error, missing
@@ -46,10 +46,10 @@ The next model I tried was [SDXL-Turbo](https://huggingface.co/stabilityai/sdxl-
 
 Some early experiments using SDXL Turbo - these were created before I implemented the tracking system for prompts and outputs. You can really see the progression here as I learned more about prompting, and just how dense you can make a prompt. Again, this was before the tracking was available, but if I remember correctly these were generated using narrative prompts.
 
-![A cat dressed as a wizard holding a wand](pixel_cat_0.jpg)
-![Another cat dressed as a wizard holding a wand](pixel_cat_1.jpg)
-![A cat dressed as a scientist standing on a desk](pixel_cat_2.jpg)
-![A cat dressed as a professor standing in a classroom](pixel_cat_3.jpg)
+![A pixel-style cat dressed as a wizard holding a wand. The pixels are square-ish.](pixel_cat_0.jpg)
+![A pixel-style cat dressed as a wizard holding a wand. The pixels are more rectangular than square.](pixel_cat_1.jpg)
+![A pixel-style cat dressed as a scientist standing on a desk.](pixel_cat_2.jpg)
+![A cat dressed as a professor standing in a classroom in an illustrative style.](pixel_cat_3.jpg)
 ## SSD-1B
 I was playing with SDXL Turbo in a WSL environment, but a funny thing happened once I installed Debian - SDXL Turbo started hitting OOM errors! It's a little inexplicable, since the overhead of WSL (3-ish GB of RAM idling) is undeniably higher than headless Debian (~200 MB of RAM idling). I've yet to quite figure out why, but my leading suspicions are either that some default on Linux platform is higher than it is on WSL, or that Microsoft has built some kind of optimizations into the Linux kernel they use for WSL; this sort of has an impact on my plans long term - eventually I'll want to use that PC to play games again; do I go back to Windows and use WSL, or do I dual boot instead?
 
@@ -58,7 +58,7 @@ The good news is, this forced to think a bit more critically about the actual ca
 So - all this lead me to try out [SSD-1B](https://huggingface.co/segmind/SSD-1B) from Segmind - a distilled version of SDXL that is 50% smaller with 60% faster inference (their claim).
 
 It works! And it works shockingly well. Here was my first (very naive) attempt with SSD-1B, a Simple Cat Photo.
-![Literally just a cat with a weirdly bulbous head](cat.jpg)
+![A photorealistic cat with a weirdly bulbous head sitting on a table.](cat.jpg)
 
 ## Other Models
 I also tried [Stable Diffusion 1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) and [Stable Diffusion 2.1](https://huggingface.co/stabilityai/stable-diffusion-2-1).
@@ -76,13 +76,13 @@ prompt: otter, cowboy hat, cowboy boots, eating pizza, wallace and gromit, clay,
 ```
 
 SSD-1B:
-![More squirrel than otter, but clearly clay-like and recognizable](./otter_ssd_1b.jpg)
+![A clay-like creature that is more squirrel than otter wearing a cowboy hat and holding a pizza. Another pizza is at its feet. The pizzas are topped ambiguously.](./otter_ssd_1b.jpg)
 
 SD-1.5:
-![An absolute mess including a three eye'd pig on the left side?](./otter_sd15.jpg)
+![Left - a three eyes pig, middle - a human wearing a cowboy hat and boots and holding a pizza, right - a clay-like creature that is somewhere between a horse and an otter wearing a cowboy hat and with a bright red nose hanging off the side of its face.](./otter_sd15.jpg)
 
 SD-2.1:
-![Nightmare fuel, boots on the pizza, some kind of round growth on the nose](./otter_sd21.jpg)
+![A monkey-like creature wearing felted clothes and a misshapen cowboy hat. One of its legs is dubiously connected to its body and is wearing a boot. The other boot is not connected to its body at all, and is stepping on a pizza. There's another pizza to the left, with a small slice of pizza floating above it, and the creature is holding a banana peel.](./otter_sd21.jpg)
 
 # How it's going
 ## Code Optimizations
@@ -98,7 +98,7 @@ I also implemented Prompt Embeddings, both for the negative and positive prompts
 
 Finally, I defaulted the image size to 768 x 768 and inference steps to 30. All in all, this results in about 1 iteration per second, or about 30 seconds to generate an image. My first attempts with SSD-1B took 5 minutes per image, so not bad!
 
-![We'll talk about this later but watercolor does such a good job of hiding flaws](./owl_20240121172113.jpg)
+![An anthropomorphic owl wearing a hoodie and listening to headphones standing on a busy street with the sunset behind it.](./owl_20240121172113.jpg)
 ```yml
 negative_prompt: cars, ugly, poor quality, bad anatomy, bad hands, text, error, missing
   fingers, extra digit, fewer digits, cropped, worst quality, low quality, jpeg artifacts,
@@ -127,14 +127,14 @@ args = {
     "negative_prompt": "cars, ugly, poor quality, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, jpeg artifacts, signature, watermark, username, artist name",
 }
 ```
-![The result of the above](./owl_20240121172434.jpg)
+![An anthropomorphic owl wearing a hoodie and jeans listening to headphones standing on an empty stret with the sun behind it.](./owl_20240121172434.jpg)
 
 ## Learnings
 Throughout the process, I've definitely learned a few things about AI art in general, the SSD-1B model in particular, and myself. In no particular order...
 
 Style is SO important - it lets you hide the artifacts where the denoise process hasn't done a good job. Some styles are better than others - `photorealistic` I've found is quite bad at hiding flaws, but `watercolor` does an excellent job. `line drawing` is also pretty good.
 
-![Quoth my sister - 'this otter would ruin my life.](./otter_20240121152300.jpg)
+![An anthropomorphic watercolor style otter wearing a brown jacket over a blue hoodie standing in an alleyway.](./otter_20240121152300.jpg)
 ```yml
 negative_prompt: bokeh, short depth of field, ugly, poor quality, bad anatomy, bad
   hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality,
@@ -145,7 +145,7 @@ prompt: otter, normcore, cozy, daytime alleyway, anthropomorphic, street photogr
 
 I don't find humans to be an interesting subject for AI art, at all. I find myself drawn to animals with clothes. Animals with pants, especially, are a unique challenge - the `anthropomorphic` or `humanoid` prompts do an ok of encouraging these animals to put on pants. 
 
-!['Sir - could you please put on pants?'](./dog_20240121141009.jpg)
+![An anthropomorphic greyhound wearing an embroidered blouse but no pants sitting on an antique chair with a gilded painting behind it.](./dog_20240121141009.jpg)
 
 ```yml
 negative_prompt: ugly, poor quality, bad anatomy, bad hands, text, error, missing
@@ -157,7 +157,7 @@ prompt: greyhound, sitting on chair, wearing clothes, humanoid, anthropomorphic,
 
 The intuition for how to resolve blurriness in prompts borders on superstition sometimes; I've seen people say things like "all the 8k images in the training set were good, so I put 8k as a prompt to bring that out"
 
-![Another very good boy](./dog_20240120174741.jpg)
+![A non-anthropomorphic light brown and white dog wearing a jean jacket.](./dog_20240120174741.jpg)
 
 ```yml
 negative_prompt: ugly, blurry, poor quality, rounded edges, bad anatomy, bad hands,
@@ -169,7 +169,7 @@ prompt: A happy dog wearing 2000s era fashion. 16 bit drawn style bipedal less f
 ```
 
 Are otters hot? Did I mention how difficult it is to get animals to wear clothes?
-![Daddy](./otter_20240121133859.jpg)
+![An otter sitting in a coffee shop wearing a jean jacket with jeans and cowboy boots and hat.](./otter_20240121133859.jpg)
 
 ```yml
 negative_prompt: ugly, poor quality, bad anatomy, bad hands, text, error, missing
@@ -180,14 +180,14 @@ prompt: otter, cowboy hat, boots, denim jacket, coffee shop, humanoid, 16 bit, S
 ```
 
 # Some other images I like
-![sea otter, cowboy hat, cowboy boots, denim jacket, eating pizza, anthropomorphic, 8k, watercolor painting](./otter_20240121131204.jpg)
+![A watercolor-style otter wearing jeans and a denim jacket sitting on the ground holding two slices of pizza, with another half of a pizza on the ground in front of it.](./otter_20240121131204.jpg)
 
-![otter, normcore, cozy, daytime alleyway, anthropomorphism, cubism](./otter_20240121152836.jpg)
+![An anthropomorphic otter wearing a hoodie standing in an cobblestoned alleyway with power lines above](./otter_20240121152836.jpg)
 
-![otter, normcore, cozy, daytime alleyway, anthropomorphism, marker, drawing, high quality](./otter_20240121153359.jpg)
+![An anthropomorphic otter wearing a hoodie standing in a cobblestoned alleyway with balconies that contain vined houseplants above.](./otter_20240121153359.jpg)
 
-![otter, t-shirt, cargo pants, normcore, cozy, night time, evening alleyway, city in background, backlit, anthropomorphism, marker, drawing, backlit, high quality](./otter_20240121154229.jpg)
+![An anthropomorphic otter wearing cargo pants standing in a cobblestoned alleyway at night. To the left, a lamp illuminating the alley.](./otter_20240121154229.jpg)
 
-![owl,(anthropomorphic)++,carrying groceries,(headphones)++,day time,busy city,street,normcore,cozy,happy,pop art,backlit,high quality](./owl_20240121171543.jpg)
+![An anthropomorphic owl carrying shopping bags and listening to headphones crossing a busy street during the daytime.](./owl_20240121171543.jpg)
 
-![owl,anthropomorphic,groceries,(headphones)++,(sunset)++,busy city street,normcore,cozy,happy,pop art,backlit,high quality](./owl_20240121171859.jpg)
+![An anthropomorphic owl wearing a hoodie and striped t-shirt listening to headphones standing in the middle of a street with the sunset behind it.](./owl_20240121171859.jpg)

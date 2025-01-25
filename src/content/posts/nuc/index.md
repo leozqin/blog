@@ -41,4 +41,4 @@ Regrettably, Arrow Electronics appears to be a fundamentally sound, prudently ru
 
 Side note: this appears to be a very fresh edit to wikipedia:
 
-![Written in the first person, this wikipedia article explains the latest in Seneca Data's life](./seneca_closure.png)
+![A screenshot of wikipedia article explaining that Arrow Electronics consolidated operations and moved manufacturing and warehousing from Syracuse to Phoenix. The note concludes that the writer is a laid-off former employee of Seneca.](./seneca_closure.png)

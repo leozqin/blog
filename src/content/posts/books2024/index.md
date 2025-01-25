@@ -20,7 +20,7 @@ Finally - it should be of no surprise that spoilers for the books may follow.
 
 # My Favorite Books
 ## One Last Stop by Casey McQuiston
-![The cover of One Last Stop by Casey McQuiston](./one-last-stop.jpg)
+![The cover of One Last Stop by Casey McQuiston - A woman carrying coffee looks into the open door of a subway train labeled Q, where another woman carrying a backpack is standing.](./one-last-stop.jpg)
 The emotional impact of [One Last Stop by Casey McQuiston](https://app.thestorygraph.com/books/28386517-30cc-4ce4-bb90-9336c370a9dd) didn't really hit me until I was reading the Acknowledgments. The author writes:
 
 > "I love this book. I love August, with her cactus spines and her dreams of a home, and Jane, my firecracker girl who refused to stay buried. I love this story because it's about finding family and finding yourself against all odds, when the world has told you there's no place for you. I love this story because it's an Unbury Your Gays story. I'm so thankful for the chance to tell it. I'm so thankful you, reader, have chosen to read it."
@@ -30,7 +30,7 @@ Understanding the story as a subversion of the [Bury Your Gays](https://tvtropes
 Simply put, queer people deserve happiness and joy, and we should find it wherever we can get it, and I can tell you that we will not find it in the closet, even if that is where we find safety. We can also find our safety in community ([in seeing and being seen](posts/community), perhaps?) and our joy in living a life unapologetic, and [by rejecting collaborators](https://www.polygon.com/tv/498573/disney-transgender-pixar-win-or-lose-banned) that seek to push us back in the closet in the name of delivering shareholder value.
 
 ## Boys Weekend by Mattie Lubchansky
-![The cover of Boys Weekend by Mattie Lubchansky](./boys-weekend.jpg)
+![The cover of Boys Weekend by Mattie Lubchansky - a marquee style sign similar to the Las Vegas sign stuck in the mud underwater while a tentacle wraps around it.](./boys-weekend.jpg)
 [Boys Weekend by Mattie Lubchansky](https://app.thestorygraph.com/books/f747cbce-e56f-492c-8af9-295f47e0d127) combines a sharp send-up of tech-bro libertarianism (is the apex of our collective achievement easily available online sports gambling, and do I treat my success at easily available online sports gambling as a referendum on my own masculinity? In this essay, I will...) with the easily relatable discomfort of being seen in an exciting, but somewhat uncomfortable outfit on a night out, except that outfit is also your gender.
 
 On the way there, the book takes a quick trip through a cult that's trying to resurrect an Eldritch horror through body-snatching, but the whole thing is structured like a corporation, and also in this revolting tech-bro version of Las Vegas, you can The Most Dangerous Game yourself! Well, technically it's a clone of yourself having been assigned a gender not your own, and it escapes from the hunting area and later saves you when the Eldrith horror breaks containment, and eventually the whole island!
@@ -41,15 +41,15 @@ Yeah, look, literally finding peace and acceptance with your old self after tryi
 <div class="flex mx-auto w-5/6">
 <div class="mx-2">
 
-![The cover of New York 2140 by Kim Stanley Robinson](./new-york-2140.jpg)
+![The cover of New York 2140 by Kim Stanley Robinson - a view of Manahattan island on a clear day, except the financial district has been flooded and futuristic high rises loom in the distance. There are numerous walkways between the buildings.](./new-york-2140.jpg)
 </div>
 <div class="mx-2">
 
-![The cover of A Half-Built Garden by Ruthanna Emrys](./a-half-built-garden.jpg)
+![The cover of A Half-Built Garden by Ruthanna Emrys - A dandelion releasing fuzz to reveal an image of the planet Earth on a night background.](./a-half-built-garden.jpg)
 </div>
 <div class="mx-2">
 
-![The cover of The Terraformers by Annalee Newitz](./the-terraformers.jpg)
+![The cover of The Terraformers by Annalee Newitz - a view of a landscape divided by a tree, where the left side is wilderness with a river running through it and the right side is a futuristc city.](./the-terraformers.jpg)
 </div>
 </div>
 

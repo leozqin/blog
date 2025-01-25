@@ -27,7 +27,7 @@ Greek yogurt and granola came out of a desire to have something healthy and read
 
 This post deals with the yogurt. The principal difference between Greek yogurt and conventional yogurt is that the Greek variety is thicker because the whey liquid has been drained from the yogurt before it is served. This, in my opinion, makes it a better carrier for granola because the action of absorbing water is delayed, which gives you longer to enjoy it before it goes soggy. They sell dedicated yogurt makers on Amazon and at other brick-and-mortar retailers, but I just make it using a single stainless steel pot. It’s also very important to use a thermometer for these operations, which increases the fiddliness, but also makes sure you get consistent results.
 
-![A tub of grained yogurt](./yogurt.jpeg)
+![A tub of drained yogurt sitting on a granite countertop.](./yogurt.jpeg)
 
 ## Recipe
 
