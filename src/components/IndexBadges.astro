@@ -10,7 +10,7 @@ import RSSBadge from "./badges/RSSBadge.astro";
 ---
 
 <section class="w-7/8 lg:w-2/5 mx-auto w-auto">
-    <div class="flex gap-4 flex-wrap my-6 mx-4 lg:mx-auto items-center">
+    <div class="flex gap-2 flex-wrap my-6 mx-4 lg:mx-auto items-center">
         <NixBadge />
         <AstroBadge />
         <RSSBadge />
@@ -21,7 +21,7 @@ import RSSBadge from "./badges/RSSBadge.astro";
         <PunchBadge />
     </div>
     <footer class="text-primary text-lg text-center mb-8">
-        Check out <a class="text-secondary underline decoration-dashed underline-offset-4 hover:text-primary"
+        Check out <a class="text-secondary underline decoration-dashed underline-offset-4 hover:text-tertiary"
             href={new URL("/badges", Astro.site)}>more badges here!</a>
     </footer>
 </section>

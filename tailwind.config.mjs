@@ -5,12 +5,13 @@ export default {
 	theme: {
 		extend: {},
 		colors: {
-			primary: colors.sky[100],
-			secondary: colors.sky[400],
+			primary: "#c0caf5",
+			secondary: "#bb9af7",
+			tertiary: "#ff007c",
 			code: "#8dc6f9" // github dark high contrast
 		},
 		backgroundColor: {
-			primary: colors.gray[900],
+			primary: "#1a1b26",
 			code: "#0a0c10" // github dark high contrast
 		}
 	},

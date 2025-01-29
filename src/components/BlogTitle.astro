@@ -7,12 +7,13 @@ interface Props {
 }
 
 const { title, date, wordCount, readTime } = Astro.props;
+const dateDay = date.toISOString().split('T')[0];
 ---
 
 <header class="mx-auto w-6/7 lg:w-2/3 text-center my-4">
     <h1 class="text-4xl my-2">{title}</h1>
     <h2 class="text-xl">
-        {date.toDateString()}
+        <time datetime={dateDay}>{date.toDateString()}</time>
     </h2>
     <h2 class="text-xl">{wordCount} words, {readTime}</h2>
 </header>

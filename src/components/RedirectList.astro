@@ -5,17 +5,17 @@ const goLinks = await getCollection("go");
 ---
 
 <section
-    class="text-primary mx-auto w-7/8 lg:w-1/2 leading-8 px-4 my-2 text-center"
+    class="text-primary mx-auto w-7/8 lg:w-1/2 leading-8 px-4 my-2 text-left"
 >
-    <h1 class="text-3xl my-2">Link Dump</h1>
+    <h1 class="text-3xl my-2 text-center">Link Dump</h1>
     <ul>
         {
             goLinks
                 .sort((a, b) => a.id.localeCompare(b.id))
                 .map((go) => (
-                    <li>
+                    <li class="mx-1 my-2 leading-snug list-disc">
                         <a
-                            class="text-secondary underline decoration-dashed underline-offset-4 hover:text-primary"
+                            class="text-secondary underline decoration-dashed underline-offset-4 hover:text-tertiary"
                             href={go.data.target}
                         >
                             {go.id} - {go.data.description}
