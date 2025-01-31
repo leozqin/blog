@@ -1,19 +1,31 @@
----
 
----
-
-<nav class="mx-auto w-7/8 lg:w-1/3 my-3">
-    <ul class="flex text-xl text-primary text-center">
-        <li class="grow">
+<nav class="mx-auto w-7/8 lg:w-1/2 my-3">
+    <ul class="flex flex-wrap text-xl text-primary text-center gap-y-3">
+        <li class="grow w-1/3 lg:w-1/5">
             <a href={new URL("/", Astro.site)}>Home</a>
         </li>
-        <li class="grow">
-            <a href={new URL("posts", Astro.site)}>Posts</a>
+        <li class="grow w-1/3 lg:w-1/5">
+            <a href={new URL("posts", Astro.site)}>Blog</a>
         </li>
-        <li class="grow">
+        <li class="grow w-1/3 lg:w-1/5">
+            <a href={new URL("badges", Astro.site)}>Badges</a>
+        </li>
+        <li class="grow w-1/3 lg:w-1/5">
+            <a href={new URL("go", Astro.site)}>Link Dump</a>
+        </li>
+        <li class="grow w-1/3 lg:w-1/5">
+            <a href={new URL("blogroll", Astro.site)}>Blogroll</a>
+        </li>
+        <li class="grow w-1/3 lg:w-1/5">
+            <a href={new URL("projects", Astro.site)}>Projects</a>
+        </li>
+        <li class="grow w-1/3 lg:w-1/5">
             <a href={new URL("resume", Astro.site)}>Resume</a>
         </li>
-        <li class="grow">
+        <li class="grow w-1/3 lg:w-1/5">
+            <a href={new URL("contact", Astro.site)}>Contact</a>
+        </li>
+        <li class="grow w-1/3 lg:w-1/5">
             <a href={new URL("about", Astro.site)}>About</a>
         </li>
     </ul>
