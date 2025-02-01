@@ -8,7 +8,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   integrations: [tailwind(), icon({ include: { mdi: ["pencil-outline"] } }), sitemap({
     filter: (page) =>
-      ! new URL(page).pathname.startsWith("/bots")
+      !new URL(page).pathname.startsWith("/bots")
   })],
   site: import.meta.env.PROD ? 'https://leozqin.me' : 'http://localhost:4321',
   markdown: {
