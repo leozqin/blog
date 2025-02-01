@@ -8,9 +8,10 @@ interface Props {
     title: string;
     count?: number;
     showMore?: boolean;
+    linkPath?: string;
 }
 
-const { title, count = blogs.length, showMore = false } = Astro.props;
+const { title, count = blogs.length, showMore = false, linkPath = "posts" } = Astro.props;
 const postsLink = new URL("posts", Astro.url);
 var showMoreDisplayVal = showMore ? 'flex' : 'none'
 ---
@@ -26,6 +27,7 @@ var showMoreDisplayVal = showMore ? 'flex' : 'none'
                     id={post.id}
                     title={post.data.title}
                     date={post.data.date}
+                    linkPath={linkPath}
                 />
             ))
     }

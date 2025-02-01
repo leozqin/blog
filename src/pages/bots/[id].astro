@@ -1,0 +1,81 @@
+---
+import { getCollection, render } from "astro:content";
+import BlogPost from "../../layouts/BlogPost.astro";
+import BotContent from "../../components/BotContent.astro";
+import { experimental_AstroContainer } from "astro/container";
+import { convert } from "html-to-text";
+import type { DataEntryMap } from "astro:content";
+
+const collection = await getCollection("blogs");
+
+async function stringRenderPost(content: DataEntryMap["blogs"]): Promise<string> {
+  let container = await experimental_AstroContainer.create()
+  const { Content } = await render(content)
+
+  return await container.renderToString(Content)
+}
+
+export async function getStaticPaths() {
+  let collection = await getCollection("blogs");
+  return collection.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+
+const WORDS_PER_MINUTE = 200;
+const STRETCH_FACTOR = Number(1);
+
+async function getReadingTime(content: String): Promise<[Number, String]> {
+  const clean = content.replace(/<\/?[^>]+(>|$)/g, "");
+  const numberOfWords = clean.split(/\s/g).length;
+  const amount = Math.ceil(numberOfWords / WORDS_PER_MINUTE);
+  return [numberOfWords, `${amount} min read`];
+}
+
+async function mixup(content: string): Promise<string> {
+  let words = convert(content).split(" ");
+
+  let currentIndex = words.length,
+    randomIndex: number;
+
+  while (currentIndex != 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [words[currentIndex], words[randomIndex]] = [
+      words[randomIndex],
+      words[currentIndex],
+    ];
+  }
+
+  return words.join(" ").replace(/<\/?[^>]+(>|$)/g, "");
+}
+
+
+const corpus: string[] = []
+
+collection.forEach(async function (item) {
+  corpus.push(await stringRenderPost(item))
+})
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const container = await experimental_AstroContainer.create();
+
+const stringContent = await container.renderToString(Content)
+
+const [numberOfWords, readingTime] = await getReadingTime(stringContent);
+const mixedContent = await mixup(corpus.join(" "));
+---
+
+<BlogPost
+  title={post.data.title}
+  date={post.data.date}
+  wordCount={Number(numberOfWords) * STRETCH_FACTOR}
+  readTime={readingTime}
+>
+  <section class="px-2 lg:px-0">
+    <BotContent content={mixedContent}>
+  </section>
+</BlogPost>

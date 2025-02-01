@@ -36,6 +36,9 @@ Disallow: /
 User-agent: YouBot
 Disallow: /
 
+User-agent: *
+Disallow: /bots/
+
 Sitemap: ${sitemapURL.href}
 `;
 

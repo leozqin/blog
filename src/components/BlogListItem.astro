@@ -3,15 +3,16 @@ interface Props {
     id: string;
     title: string;
     date: Date;
+    linkPath: string;
 }
 
-const { id, title, date } = Astro.props;
+const { id, title, date, linkPath} = Astro.props;
 const isoDate = date.toISOString().split("T")[0];
 ---
 
 <li class="text-primary list-inside my-1">
     <a
-        href={new URL(`posts/${id}`, Astro.site)}
+        href={new URL(`${linkPath}/${id}`, Astro.site)}
         class="text-secondary underline decoration-dashed underline-offset-4 hover:text-tertiary"
         >{isoDate}: {title}</a
     >
