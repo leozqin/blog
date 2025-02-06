@@ -4,6 +4,8 @@ date: 2024-11-09
 slug: precis-roadmap-nov-2024
 tags:
 - tech
+- llm
+- foss
 ---
 # A look back at feature releases
 We've come a long way since I last wrote about [Precis](https://github.com/leozqin/precis) (my open-source AI-enabled RSS Reader).

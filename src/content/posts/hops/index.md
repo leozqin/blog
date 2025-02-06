@@ -2,6 +2,11 @@
 title: My final LLM project is for the little guys
 slug: hops-my-final-llm-project
 date: 2025-01-22
+tags:
+- tech
+- foss
+- llm
+- uspol
 ---
 This is a story in two parts - the first is about my latest project, HOPS, but the second is about how I won't be doing any substantial work on LLM-related ideas for the forseeable future.
 

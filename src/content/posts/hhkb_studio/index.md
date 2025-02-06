@@ -5,6 +5,7 @@ slug: hhkb-studio-review
 tags:
 - tech
 - gear
+- review
 ---
 On [my recent trip to japan](/posts/assorted-takes-japan-2024) I had the opportunity to visit one of the few places that sells HHKB products in-store. 
 

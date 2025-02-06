@@ -1,0 +1,34 @@
+---
+import { getEntry } from "astro:content";
+import BlogList from "../../components/BlogList.astro";
+import BlogListById from "../../components/BlogListById.astro";
+import HeaderMeta from "../../components/HeaderMeta.astro";
+import NavHeader from "../../components/NavHeader.astro";
+import { getTagMap } from "./index.astro";
+
+export async function getStaticPaths() {
+    const tagMap: Map<string, Array<string>> = await getTagMap();
+
+    return Array.from(tagMap, ([tag, posts]) => ({
+            params: { tag: tag },
+            props: { posts }
+        }))
+    ;
+}
+
+const { posts } = Astro.props;
+
+const blogEntries = posts.map(async (post) => await getEntry("blogs", post))
+---
+
+<html lang="en">
+    <head>
+        <title>Leo's Blog</title>
+        <HeaderMeta />
+    </head>
+    <body class="bg-primary">
+        <NavHeader />
+        <BlogListById posts={blogEntries} />
+        <div class="my-10"></div>
+    </body>
+</html>

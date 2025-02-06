@@ -4,6 +4,7 @@ date: 2023-12-30
 slug: aws-athena-is-awesome
 tags:
 - tech
+- cloud
 ---
 I'll say it - AWS Athena is criminally underrated as a platform for processing complex, non-interactive business data workloads.
 

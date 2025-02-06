@@ -4,6 +4,7 @@ date: 2025-01-29
 slug: grub-out-of-memory-linux
 tags:
 - tech
+- linux
 ---
 # TL;DR
 If you have a HP laptop and you're getting Out of Memory errors when trying to start Grub, turn down the Video Memory BIOS setting to 128 MB or lower. Source: [Stack Overflow](https://askubuntu.com/a/1434876).

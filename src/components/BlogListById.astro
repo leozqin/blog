@@ -1,0 +1,32 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+    posts: Promise<CollectionEntry<"blogs">>[];
+}
+
+const { posts } = Astro.props;
+const { tag } = Astro.params;
+
+const resolvedPosts = await Promise.all(posts);
+---
+
+<section class="mx-auto w-7/8 lg:w-1/2 px-4 leading-loose">
+    <h1 class="text-3xl my-4 text-primary">
+        Posts for tag {tag}:
+    </h1>
+    <ul>
+        {
+            resolvedPosts
+                .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+                .map((post) => (
+                    <li class="text-secondary underline list-inside decoration-dashed underline-offset-4 hover:text-tertiary list-disc">
+                        <a href={new URL(("posts/" + (post.data.slug ?? post.id)) , Astro.site)}>
+                            {post.data.date.toISOString().split("T")[0]}:{" "}
+                            {post.data.title}
+                        </a>
+                    </li>
+                ))
+        }
+    </ul>
+</section>

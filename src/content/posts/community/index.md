@@ -2,6 +2,9 @@
 title: "Seeing and Being Seen"
 slug: seeing-and-being-seen
 date: 2024-11-23
+tags:
+- capitalism
+- uspol
 ---
 # The Meaning of Community
 I've been thinking a lot recently about the meaning of community. This is in no small part a response from me to the Bad Thing That Happened, but I want to think my thoughts in a way that is durable to Bad Things Happening. Over the past three weeks, I've sought safety through isolation, and (acknowledging my privilege in being able to do so), it's time to come out into the light, and do something. Indeed, I find myself wanting to do more, and to do better, and my own process of grief and dealing has been bolstered through community - community with my family, my friends, and fellow People From the Internet. In the process, I find that there are many aspects to community that I haven't considered, and I think the way that we all, or at the very least, I get through "all this" is by participating and engaging in community.

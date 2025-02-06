@@ -5,6 +5,7 @@ slug: homelab-3.0
 tags:
 - homelab
 - tech
+- linux
 ---
 I've been making some improvements/changes to the homelab, and I would now consider this to be the third iteration of the homelab. In the [Dickension tradition](https://en.wikipedia.org/wiki/A_Christmas_Carol), I'll go through the past, current, and future states of my homelab.
 

@@ -4,6 +4,8 @@ date: 2024-06-12
 slug: assorted-takes-japan-2024
 tags:
 - travel
+- review
+- culture
 ---
 I recently got back from a 12 day, 10 night trip to Japan. The itinerary was as follows:
 

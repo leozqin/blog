@@ -5,6 +5,7 @@ date: 2015-06-16
 slug: bikes-i-ride-soma-double-cross
 tags:
 - hall-of-fame
+- bikes
 ---
 ## A Note from the Future
 I took a loooooong break from cycling, but have recently gotten back into it. I ended up fixing up this bike to make my return to cycling. The only change is the rear wheel, which was stolen while I was living in Pasadena, and with it the Vittoria Randonneur Hyper 700-35c that I was running. I've since switched it out with the same tire in 700-32c that I was running on my Specialized rainy day commuter bike.

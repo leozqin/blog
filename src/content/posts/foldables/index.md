@@ -5,6 +5,7 @@ slug: foldables-galaxy-z-fold-6-review
 tags:
 - tech
 - gear
+- review
 ---
 I recently upgraded my phone to the Samsung Galaxy Z Fold 6, and I have some feelings about its design, the design and promise of foldables in general, and some of its quirks and eccentricities. 
 

@@ -1,0 +1,31 @@
+---
+interface Props {
+    label: String;
+}
+
+const { label } = Astro.props;
+const colors = [
+    "indigo",
+    "mediumvioletred",
+    "purple",
+    "darkslategrey",
+    "forestgreen",
+    "firebrick",
+    "teal",
+    "mediumseagreen",
+    "crimson",
+    "maroon"
+];
+var color = colors[Math.floor(Math.random() * colors.length)];
+---
+
+<div class="my-2 px-1 mx-1 leading-none">
+    <a href={new URL("tags/" + label, Astro.site)} class="text-sm">{label}</code>
+</div>
+
+<style define:vars={{ color }}>
+    div {
+        background-color: var(--color);
+        border-radius: 6px;
+    }
+</style>

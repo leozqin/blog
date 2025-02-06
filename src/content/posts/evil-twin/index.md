@@ -4,6 +4,9 @@ slug: evil-twin-ai-deterrence
 date: 2025-02-01
 tags:
 - tech
+- capitalism
+- uspol
+- web
 ---
 Remember "Sabrina the Teenage Witch"? 
 

@@ -4,6 +4,8 @@ date: 2024-02-26
 slug: automating-media-diet
 tags:
 - tech
+- foss
+- llm
 ---
 
 One thing that's very important to me is maintaining a healthy media diet. While I'm not averse to recommendation algorithms, I find that they optimize for engagement and on-platform time, as is required to produce unending *growth* in ad revenue. As a result, I find that such algorithms sacrifice quality for quantity, or outrage impact, or speed. At its extreme, in the case of the conservative control of mainstream media, this disregard for quality manifests as disregard for *truth*. Basically, whatever the reasoning, the thing that we lose is quality. So - as someone who deeply values quality, I find that I seek ways to make my own algorithm. This post is about two potential ways to automate the way that I consume written journalistic media - and I plan to eventually implement one of them. Think of this as an architecture document for this component of my home network.
