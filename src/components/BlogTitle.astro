@@ -1,12 +1,15 @@
 ---
+import TagBadge from './TagBadge.astro';
+
 interface Props {
     title: String;
     date: Date;
     wordCount: Number;
     readTime: String;
+    tags?: String[]
 }
 
-const { title, date, wordCount, readTime } = Astro.props;
+const { title, date, wordCount, readTime, tags=[] } = Astro.props;
 const dateDay = date.toISOString().split('T')[0];
 ---
 
@@ -16,4 +19,12 @@ const dateDay = date.toISOString().split('T')[0];
         <time datetime={dateDay}>{date.toDateString()}</time>
     </h2>
     <h2 class="text-xl">{wordCount} words, {readTime}</h2>
+    <div class="flex justify-center">
+        {
+            tags.map((tag) => (
+                <TagBadge label={tag} />
+            ))
+        }
+    </div>
+    
 </header>

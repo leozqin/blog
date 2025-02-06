@@ -3,7 +3,7 @@ title: Does more expensive stuff make you better at golf? An unscientific invest
 slug: does-more-expensive-stuff-make-you-better-at-golf
 date: 2024-03-29
 tags:
-- fun
+- games
 ---
 I like video games, but I don't consider myself to be an enthusiastic or avid gamer. Instead, I find that I gravitate towards a few high-comfort games that I play at casual pace for a looooong time. Oddly enough, the shared theme for these high-comfort games seems to be that they are primarily sports simulations. I'm sort of a sports fan, I guess, but I have always had the most fun playing these games by myself, not online. Obviously at the high end they are filled with microtransactions, but also I just don't have much interest in playing with People From The Internet. Instead - I set the difficulty to its lowest point and try to min-max the game. 
 

@@ -4,6 +4,7 @@ date: 2024-09-28
 slug: leetcode-doesnt-serve-anybody-well
 tags:
 - tech
+- capitalism
 ---
 # Leetcode doesn't actually assess skill
 I've been thinking a lot about the state of skills evaluation in the tech industry. Usually, when you apply for a job, you meet with a recruiter, then the hiring manager, then you do a technical screen, and then a panel screen. Sometimes the technical screen comes before the hiring manager screen (which is a bad idea - it's not a good use of time for the candidate, because mission/vision fit should be the most important thing to look for in the market).

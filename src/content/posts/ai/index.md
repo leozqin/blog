@@ -4,6 +4,8 @@ date: 2023-12-10
 slug: why-does-ai-make-me-feel-bad
 tags:
 - tech
+- llm
+- capitalism
 ---
 By any objective measure, I should be super excited about advances in AI and its recent entrance into ubiquity. However, every time I hear about the latest GPT iteration, the latest startup that uses generative LLMs to revolutionize XYZ industry, I just feel bad. 
 

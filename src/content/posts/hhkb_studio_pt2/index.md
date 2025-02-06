@@ -5,6 +5,7 @@ slug: hhkb-studio-pt-2
 tags:
 - tech
 - gear
+- review
 ---
 I've had the [HHKB Studio](../hhkb_studio/) for about a month now. I've been using it as the main keyboard for my Mac Mini, which I primarily use for coding personal projects, such as this website. Indeed, over the course of the month I used the keyboard to build the first iteration of the backend for [venmo-calculator](https://github.com/leozqin/venmo-calculator/tree/main) as well as the redesign of the theme for my blog (more details on that coming soon). Some takeaways and learnings of mine...
 

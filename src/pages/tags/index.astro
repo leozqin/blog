@@ -1,0 +1,40 @@
+---
+import { getCollection } from "astro:content";
+import TagList from "../../components/TagList.astro";
+import HeaderMeta from "../../components/HeaderMeta.astro";
+import NavHeader from "../../components/NavHeader.astro";
+
+export async function getTagMap() {
+    var tagMap = new Map();
+    const blogs = await getCollection("blogs");
+
+    blogs.forEach((post) =>
+        (post.data.tags ? post.data.tags : new Array()).forEach((tag) =>
+            tagMap.has(tag)
+                ? tagMap
+                      .get(tag)
+                      .push(post.data.slug ? post.data.slug : post.id)
+                : tagMap.set(
+                      tag,
+                      new Array(post.data.slug ? post.data.slug : post.id),
+                  ),
+        ),
+    );
+
+    return tagMap;
+}
+
+const tagMap = await getTagMap();
+---
+
+<html lang="en">
+    <head>
+        <title>Leo's Blog</title>
+        <HeaderMeta />
+    </head>
+    <body class="bg-primary">
+        <NavHeader />
+        <TagList tags={Array.from(tagMap.keys())} />
+        <div class="my-10"></div>
+    </body>
+</html>

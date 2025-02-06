@@ -3,6 +3,8 @@ title: "A Registry and Proxy Server for Agentic Tool Calling"
 date: 2024-10-08
 tags:
 - tech
+- llm
+- foss
 ---
 This post is about an idea that's been rattling around in my head lately.
 

@@ -4,6 +4,7 @@ date: 2024-01-21
 slug: ai-art-is-fun-sdxl
 tags:
 - tech
+- llm
 ---
 I regret to inform you that I've been playing around with AI art and I've been having a great time doing so.
 

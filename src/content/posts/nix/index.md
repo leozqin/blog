@@ -4,6 +4,8 @@ date: 2024-11-02
 slug: the-nix-mania-has-taken-hold-i-fear
 tags:
 - tech
+- linux
+- homelab
 ---
 It started with virtualization, but I regret to announce that I am now running NixOS on bare metal.
 

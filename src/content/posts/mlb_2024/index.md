@@ -5,6 +5,7 @@ slug: marginalia-mlb-2024
 tags:
 - sports
 - travel
+- culture
 ---
 The term "Marginalia" refers to notes, diagrams, and decoration in the margins of the written page. Not necessarily of the same substance as the writing itself, but rather a reflection of the reader's impression and engagement with the text. Since I'm unlikely to write more substantially and meaningfully than a professional sports writer about a game, this piece has more to do with my impression and context of the games that I attended. As the 2024 regular season draws to a close (at least as it relates to my attendance of games), I find myself reflecting on the season through the lens of marginalia.
 

@@ -2,6 +2,10 @@
 title: Goodbye Hugo, Hello Astro!
 slug: goodbye-hugo-hello-astro
 date: 2025-01-21
+tags:
+- web
+- tech
+- meta
 ---
 To my one faithful repeat reader - your eyes do not deceive you, the blog has changed! Over the weekend, I successfully distracted myself from \*hand motions\* **all this** by rebuilding my blog!
 

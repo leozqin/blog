@@ -4,6 +4,9 @@ slug: resolutions-for-a-freer-2025
 date: 2025-01-01
 tags:
 - tech
+- capitalism
+- uspol
+- meta
 ---
 The theory of this post is this - what can I do over the next year to make myself and my loved ones more free? By free, I mean free as in freedom, not free as in beer.
 

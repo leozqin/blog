@@ -5,6 +5,8 @@ slug: local-library
 tags:
 - tech
 - homelab
+- foss
+- web
 ---
 Welp, it's happened again - in a fit of pique, I've gone and built an app to solve a specific problem that I have.
 

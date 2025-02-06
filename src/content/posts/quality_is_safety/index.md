@@ -3,6 +3,7 @@ title: "Quality is Safety"
 date: 2024-12-15
 tags:
 - tech
+- capitalism
 ---
 # Squirrel Burgers
 There's a stomach churning parable among people who think a lot about agile as a software development orthodoxy that is commonly attributed to Ken Schwaber (I pulled this particular telling from [this post on Scrum.org](https://www.scrum.org/forum/scrum-forum/33241/quality-over-quantity-squirrel-burgers)).

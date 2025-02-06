@@ -6,6 +6,8 @@ date: 2015-09-05
 tldr: You're gonna neeed a thermometer
 tags:
 - hall-of-fame
+- food
+- recipe
 ---
 
 ## A note from the future

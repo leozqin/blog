@@ -5,6 +5,8 @@ date: 2024-10-22
 tags:
 - tech
 - games
+- linux
+- homelab
 ---
 Over the past week, I've been playing around virtualization. Over the course of things, I've learned a lot about virtualization, and a little about myself, too.
 

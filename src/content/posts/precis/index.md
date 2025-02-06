@@ -4,6 +4,8 @@ slug: precis-an-ai-enabled-rss-reader
 date: 2024-05-21
 tags:
 - tech
+- llm
+- foss
 ---
 Precis (properly Précis, pronounced "pray-see") is a extensibility-oriented RSS reader that can use LLMs to summarize and synthesize information from numerous different sources, with an emphasis on timely delivery of information via notifications. 
 

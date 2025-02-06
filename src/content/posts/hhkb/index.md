@@ -6,6 +6,9 @@ date: 2016-06-11
 tldr: It took me six years to come around to this keyboard
 tags:
 - hall-of-fame
+- gear
+- review
+- tech
 ---
 ## A note from the future
 In the spirit of full disclosure, about a week after I wrote this review, I stopped using the HHKB and switched (back) to the WASD Code TKL with Cherry MX Clear switches. Acclimating to the layout was **hard** and if we're being honest, not having keycap legends really put a damper on my productivity. After that, my next few keyboards were 60% or 70% size with a variety of switches - MX Clears, Matias Tactile, Gateron Brown in that order.

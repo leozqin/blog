@@ -5,7 +5,9 @@ const blogs = defineCollection({
     loader: glob({ pattern: "**/*.{md,mdoc}", base: "./src/content/posts" }),
     schema: z.object({
         title: z.string(),
-        date: z.date()
+        date: z.date(),
+        tags: z.array(z.string()).optional(),
+        slug: z.string().optional()
     })
 })
 
@@ -28,6 +30,5 @@ const go = defineCollection({
         description: z.string()
     })
 })
-
 
 export const collections = { blogs, projects, go }

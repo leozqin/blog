@@ -5,6 +5,7 @@ date: 2015-07-26
 slug: bikes-i-ride-civia-halsted
 tags:
 - hall-of-fame
+- bikes
 ---
 ## A Note from the Future
 
