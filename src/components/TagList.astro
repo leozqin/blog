@@ -16,7 +16,7 @@ const { tags } = Astro.props;
                 .sort((a, b) => (a > b ? 1 : -1))
                 .map((tag) => (
                     <li class="text-secondary underline decoration-dashed underline-offset-4 hover:text-tertiary">
-                        <a href={new URL("tags/" + tag, Astro.url)}>{tag}</a>
+                        <a href={new URL("tags/" + tag, Astro.site)}>{tag}</a>
                     </li>
                 ))
         }
