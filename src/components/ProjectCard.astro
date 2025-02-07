@@ -12,7 +12,7 @@ const { proj } = Astro.props;
 const { Content } = await render(proj);
 
 const repoLink = new URL(proj.data.link);
-const blogLink = new URL(proj.data.blogLink, Astro.url);
+const blogLink = new URL(proj.data.blogLink, Astro.site);
 ---
 
 <div class="project-card my-4 p-2">
