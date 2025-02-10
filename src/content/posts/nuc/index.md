@@ -6,6 +6,7 @@ date: 2023-11-06
 tags:
 - homelab
 - tech
+- tech-support
 ---
 # What is this NUC?
 At the time when I am writing this, there exists on eBay a surfeit of extremely inexpensive NUCs - labelled "NUC5i5MYBE". I have personally acquired 2 of them, and am using them in my homelab to host, among other things, [Gitea](https://github.com/go-gitea/gitea), [Drone CI](https://www.drone.io/), and [Uptime Kuma](https://github.com/louislam/uptime-kuma). I could go more into that, but the purpose of this post is to give some details about what exactly these machines are, where they may have come from, and some useful things to know about them.

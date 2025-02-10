@@ -7,6 +7,7 @@ tags:
 - homelab
 - tech
 - linux
+- tech-support
 ---
 
 Most of the posts on this blog are my opinion. The same can be said of most posts on most blogs. Sometimes, however, I like to write a blog post that does the other thing for which we use the internet: conveying and sharing information. This is one of those blogs (but not [the only one](../all-about-the-senecadata-nuc5i5mybe/))
