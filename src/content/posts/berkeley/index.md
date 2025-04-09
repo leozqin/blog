@@ -1,0 +1,50 @@
+---
+title: "7 Days in Berkeley, CA"
+date: 2025-04-08
+slug: 7-days-in-berkeley
+tags:
+- travel
+- food
+- books
+---
+I recently spent 7 days in Berkeley, and I had a great time! This post will highlight a few vignettes from the trip.
+
+# Why Berkeley?
+I have no particular connection to Berkeley. I didn't go to Cal, nor did I apply there (although - they most certainly would not have let me in, justifiably so). Instead, I chose to go to Berkeley because 1) I've never been there, 2) it'd been a while since my last work-cation (working remote, in an unusual locale), and 3) I like immersing myself in highly walkable areas. In 2023 I had the opportunity to explore Philadelphia mostly on foot, and loved it!
+
+I'm also academically interested in the concept of a college town. I went to a small liberal arts college, and those of you who know me know that I went there out of stubbornness, and spent an embarassing amount of time living with that regret. Of course, with age I came to understand that this is just how thing had to happen in order for me to be where I am today, which is to say, happily. So - the appeal of the college town is somewhat nostalgic for something that never existed, but also at the end of day an opportunity for certifiably good people watching.
+
+# The Hotel
+There are two main nice (4-star) hotels in the town - The Shattuck Hotel and the Graduate by Hilton Berkeley. The former is located to the west of the campus, in the main downtown area of Berkeley by the BART station. The latter is two blocks to the south of the campus. I chose the latter hotel because I felt that the immersion might be better, to be farther from downtown. 
+
+I do somewhat regret this decision - the hotel itself is fine (albeit with some quirks, which we'll discuss later) because the food options are better to the west of campus. This is because there are a lot of dorms immediately south, and so therefore all the food options are fast-casual style, or small takeout-oriented restaurants, targeted at college students. That being said, almost all restaurants are now somewhat takeout oriented, so it may just be the luck of the draw. In any case, the downtown area with its better food options is about a mile's walk from the Graduate, so close enough to walk, but not quite close enough to reach when you're sprinting away from the keyboard for a quick lunch.
+
+More on the hotel - the Graduate brand of hotels is a recent-ish acquisition by Hilton, and true to the name they are all located in college towns, and decorated with an academic theme. In my room, there was also a movie poster for [The Graduate](https://en.wikipedia.org/wiki/The_Graduate) starring Dustin Hoffman and Anne Bancroft. The movie has a particular link to Berkeley, as Dustin Hoffman's younger love interest (of two) attends school there. But, it does seem like such a perfect link to the name of the hotel that I can't help but wonder if other Graduate hotels have the same poster. It seems unlikely that every hotel has such a perfect contrivance.
+
+Anyway - the hotel itself is quite old, and you can see it in the bathrooms in particular. They've clearly been repainted and decorated several times, but not materially updated. The sink in my room particular was quite small - about a quarter of the size of a standard sink. Most inconveniently the faucet sticks out over the sink, so when you wash your face or hands, water drips on it. When I arrived, the faucet was also wobbly and loose, but they fixed that quickly once I told them.
+
+Another peculiarity of the hotel is that there's an amenity fee, but you get most of it "back" in the form a food-and-beverage credit of $25 per day. I say "back" in quotes because it's kind of inconvenient to use. There's an onsite coffee shop that used to be the Berkeley branch of Tartine, but [closed down in 2020](https://sf.eater.com/2020/4/27/21238591/tartine-berkeley-closes-permanently-coronavirus) supposedly due to Covid, but had also recently voted to unionize - so, make of that what you will. The replacement, Poindexter Coffee, is a husk of its former self. It does have an onsite bakery, but is only open from 6:30am to 12pm. But then, the restaurant in the hotel, Henry's, doesn't open until 4pm. So, there is a period of four hours in the middle of the afternoon where there is no food service in the hotel - ideally I'd like to have been able to make use of that credit for an afternoon coffee/pick-me-up.
+
+On the topic of Henry's Restaurant, it is apparently also a historical mainstay of the area that is now a husk of its former self. In 2018, before Hilton bought the property, it was relaunched with some [pretty lofty visions that didn't quite pan out](https://sf.eater.com/2018/6/26/17506572/henrys-restaurant-review-chris-kronner-berkeley). My experience there was adequate. I sat at the bar a few times reading with a drink, and was never unduly bothered, I also got food to go once, and also popped in once to ask for takeout utensils (which they provided without issue). So yeah - not bad, but not exciting either. I think this is pretty emblematic of the hotel overall. It clearly used to be better, but these days it's fine; as the kids would say - mid.
+
+# End User Computing
+Every time I travel, the fun wrinkle that I get to create for myself is this - what computer(s) do I bring, and what will I do on them? This time, I brought my HP ZBook Firefly 14 G8 that has been multi-booted with every Linux imaginable. First in the boot order is Void Linux (and independent distro), then EndeavourOS (based on Arch), Ultramarine Linux (a Fedora spin), and Debian (the old standby). My goal for this laptop is to be representative of the Linux world at large. I'm not quite there yet, but it's proven to be quite usable. I'll have to write some time about my experience with Void Linux; I think I love it.
+
+I also field deployed my travel router for the first time (ever since the election in anticipation of tariffs, I've been buying every used electronic and clothing piece I can get my hands on) - a GL.iNet Beryl AX. It was lucky I bought this too, because the hotel's wifi is completely unsecured! No password, no captive portal. I suspect it may have something to do with the history of the hotel as space for college kids to study. Indeed, a steady stream of students could be found in the lobby all day, as early as 7am and as late as 10pm. In any case, it was nice to have a network perimeter of my own on this otherwise unsecured network.
+
+The killer app for the travel router, for me, is its Tailscale integration. I was able to successfully join it to the my tailnet, but I couldn't quite get it to use exit nodes. I suspect it has something to do with the plethora of network interfaces on the router; I was able to ssh into the router, but even connecting it to my tailnet via CLI didn't help. In the end, I ended up using Tailscale on my individual devices. It may also be a network peculiarity of the hotel; I also had a case where my work computer (running MacOS) was unable to download a Slack update, but did so successfully using my work-provided VPN.
+
+One last fun computing anecdote - I was interested in trying out Sway WM on Void Linux, and so I tried installing it, and in the process had to change window managers. At some point I managed to delete all of the services running on RunIt, and so borked the install. Woops! I reinstalled, and now have a functional RiverWM environment on Void, but I find myself spending more time in GNOME (the default XFCE being a little too chintzy for my taste).
+
+# Books I Read
+I've come to realize that the three main things I do at home, outside of work, are read, cook, and indulge in other hobbies (currently piano). However, being in a hotel, I can't cook, and I didn't bring a piano (although I suppose Southwest would have let me check it actually...). So, I spent a LOT of time reading - 7 books in as many days. I don't mind it at all, as a way of passing the time. Some mini reviews below, in reading order:
+
+- [Consent by Jill Ciment](https://app.thestorygraph.com/books/5bf9c55b-2b4b-482c-93ca-69526666e9f0) - a deeply thoughtful and contemplative memoir about the power dynamics of a sometimes-illicit relationship and the nature of aging.
+- [Endangered Eating: America's Vanishing Foods by Sarah Lohman](https://app.thestorygraph.com/books/c5c1453b-3a79-4492-ad01-c5f041444fc2) - a cross-country tour of indigenous foodways - I really enjoyed this particular combination of history and food writing
+- [When the Moon Hits Your Eye by John Scalzi](https://app.thestorygraph.com/books/4f3c3b02-3d2b-4765-93ac-4656133bbec5) - a tongue in cheek character exploration centered on one question - what would happen in the moon suddenly turned into (undifferentiated) cheese?
+- [Mediocre: The Dangerous Legacy of White Male America by Ijeoma Oluo](https://app.thestorygraph.com/books/53296ff7-9131-4ca4-96be-461302ba82d7) - a well written demonstration of what my readers hopefully intuitively know - white men scrambled to the top of the ladder and then gleefully pulled it up behind them.
+- [Everyone I Kissed Since You Got Famous by Mae Marvel](https://app.thestorygraph.com/books/0cc17bd2-ebf4-4ed8-8ecd-cc4f02f000ef) - a fun sapphic romance with a basis in Hollywood - refreshingly, the two leads make no secret of their attraction to each other, and spend the final third of the book overcoming adversity together.
+- [The Stardust Grail by Yume Kitasei](https://app.thestorygraph.com/books/934aa471-f190-4aca-bfe4-9d01ff848f28) - a straightforward heist with your extraterrestrial bff becomes a struggle for the future of interstellar travel.
+- [Something to Talk About by Meryl Wisner](https://app.thestorygraph.com/books/3e606dc1-b168-49c1-bc7f-18f2a1c7c03c) - an extremely believable character exploration (funnily enough, also with a basis in Hollywood) with a slooooooow burn, so remarkably chaste for a work by Meryl Wisner.
+
+Without revealing too much, as there are still 9 months left in the year, keep an eye out for The Stardust Grail in this year's Favorite Books of 2025!
