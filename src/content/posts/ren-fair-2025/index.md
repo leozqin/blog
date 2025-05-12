@@ -31,6 +31,8 @@ I edited using [RawTherapee](https://rawtherapee.com/). Overall, I think did an 
 
 ![A person wearing a dress and riding a horse points their fan at the crowd while speaking into a headset microphone](./joust_mc.jpg)
 
+![A person wearing a red fishnet shirt, red pants, and red horns and holding a red trident with a progress pride flag sticking out of their back pocket flag cheers at a person riding a horse.](./devil.jpg)
+
 # Happenings
 
 ![A well-insulated oven used for glassblowing glows red with heat. A sign saying "Smoke Ye Not" is visible in the foreground](./glassblowing_oven.jpg)
