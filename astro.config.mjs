@@ -15,8 +15,5 @@ export default defineConfig({
     shikiConfig: {
       theme: "github-dark-high-contrast"
     }
-  },
-  experimental: {
-    svg: true
   }
 });
