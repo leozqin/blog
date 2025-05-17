@@ -1,6 +1,6 @@
 ---
-title: Two Photos, Five Ways
-slug: two-photos-five-ways-photo-editing
+title: Two Photos, Four Ways
+slug: two-photos-four-ways-photo-editing
 date: 2025-05-17
 tags:
 - photography
