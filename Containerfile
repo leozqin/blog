@@ -1,14 +1,11 @@
-FROM registry.fedoraproject.org/fedora-toolbox:41
+FROM docker.io/library/node:22-bookworm
 
-ARG NAME=blog
-LABEL com.github.containers.toolbox="true" \
-      name=blog \
-      version="1.0.0" \
-      usage="This image is meant to be used with the toolbox(1) command" \
-      summary="Image for creating toolbox container for my blog"
+RUN apt update && apt install -y wget gpg
 
-RUN rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
-RUN printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h\n" | sudo tee -a /etc/yum.repos.d/vscodium.repo
+RUN wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+    | gpg --dearmor \
+    | dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg \
+    && echo 'deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg] https://download.vscodium.com/debs vscodium main' \
+    | tee /etc/apt/sources.list.d/vscodium.list
 
-RUN dnf check-update && dnf -y install codium curl nodejs
-
+RUN apt update && apt install -y codium
