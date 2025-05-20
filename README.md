@@ -8,10 +8,10 @@ Install nodejs 22 and do `npm install` then `npm run dev`.
 
 On a system with Nix installed - `nix develop`.
 
-On a system with `toolbox` and `podman` (ie, Fedora Silverblue) installed:
+On a system with `distrobox` and `podman` (ie, Fedora Silverblue) installed:
 
 ```
-podman build --tag toolbx-blog .
-toolbox create --image localhost/toolbx-blog blog
-toolbox enter blog
+podman build . --file Containerfile --tag blog
+distrobox create --name blog --image localhost/blog
+distrobox enter blog
 ``` 
