@@ -7,7 +7,7 @@ interface Props {
 }
 
 const { gal } = Astro.props;
-const galleryPath = new URL(`gallery/${gal.id}`, Astro.url);
+const galleryPath = new URL(`gallery/${gal.id}`, Astro.site);
 ---
 
 <div class="border-white w-1/2">
