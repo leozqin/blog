@@ -4,7 +4,7 @@ date: 2025-05-25
 slug: la-county-fair-2025-gallery
 tags:
 - meta
-- technology
+- tech
 - photography
 ---
 Your eyes do not deceive you - there is a new item in the (now even more overflowing) nav bar! This website now supports [Galleries!](/gallery)!
