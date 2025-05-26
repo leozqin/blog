@@ -24,7 +24,7 @@ Anyway... back to the fair. Last year was my first time going to the fair, and I
 
 [Here's a link to the gallery for this trip!](/gallery/county-fair-2025)
 
-Photographically, we'll start with some photos that think do a good job of setting the scene.
+Photographically, we'll start with some photos that think do a good job of setting the scene. Most of these photos were taken with a Panasonic Leica DG Summilux 15mm f/1.7 ASPH lens. A few were taken using the Olympus M.Zuiko Digital 25mm f/1.8 lens.
 
 ![people walking into a tunnel under a red and blue sign that says "Welcome to BLUE GATE - Now Entering DOWNTOWN FAIRPLEX"](P5240002_processed_border.jpg)
 
