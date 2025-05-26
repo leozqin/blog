@@ -47,8 +47,8 @@ export async function getStaticPaths() {
 }
 const { gallery, image } = Astro.props;
 
-const fileName = getFileName(image.src, Astro.site!);
-const metaMap = new Map(gallery.data.images!.map((obj) => [obj.src, obj]));
+const fileName = getFileName(image.src, Astro.site!).split(".")[0];
+const metaMap = new Map(gallery.data.images!.map((obj) => [obj.src.split(".")[0], obj]));
 
 ---
 
