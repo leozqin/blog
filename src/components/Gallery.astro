@@ -17,7 +17,7 @@ interface Props {
 
 const { images, title, description, alt, gallery } = Astro.props;
 
-const altMap = new Map(alt.map((obj) => [obj.src, obj.alt]));
+const altMap = new Map(alt.map((obj) => [obj.src.split(".")[0], obj.alt]));
 ---
 
 <section class="text-primary text-center mx-auto w-3/4 my-4">
@@ -41,7 +41,7 @@ const altMap = new Map(alt.map((obj) => [obj.src, obj.alt]));
                     <Image
                         src={img}
                         alt={
-                            altMap.get(getFileName(img.src, Astro.site!)) ??
+                            altMap.get(getFileName(img.src.split(".")[0], Astro.site!)) ??
                             defaultAlt
                         }
                     />
