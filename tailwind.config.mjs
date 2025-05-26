@@ -8,7 +8,7 @@ export default {
 			primary: "#c0caf5",
 			secondary: "#bb9af7",
 			tertiary: "#ff007c",
-			code: "#8dc6f9" // github dark high contrast
+			code: "#8dc6f9", // github dark high contrast
 		},
 		backgroundColor: {
 			primary: "#1a1b26",

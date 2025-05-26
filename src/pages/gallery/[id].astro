@@ -1,0 +1,48 @@
+---
+import { getCollection } from "astro:content";
+import HeaderMeta from "../../components/HeaderMeta.astro";
+import NavHeader from "../../components/NavHeader.astro";
+import Gallery from "../../components/Gallery.astro";
+import { getGalleryImages } from "../../content";
+import PostFooter from "../../components/PostFooter.astro";
+
+const { id } = Astro.params;
+
+export async function getStaticPaths() {
+    const galleries = await getCollection("galleries");
+
+    const paths = Object.values(galleries).map((gal) => {
+        return {
+            params: {
+                id: gal.id,
+            },
+            props: {
+                gal,
+            },
+        };
+    });
+
+    return paths;
+}
+
+const { gal } = Astro.props;
+const images = await getGalleryImages(gal.id);
+---
+
+<html lang="en">
+    <head>
+        <title>Galleries</title>
+        <HeaderMeta />
+    </head>
+    <body class="bg-primary text-primary">
+        <NavHeader />
+        <Gallery
+            images={images}
+            title={gal.data.title}
+            description={gal.data.description ?? ""}
+            alt={gal.data.images ?? []}
+            gallery={gal.id}
+        />
+        <PostFooter />
+    </body>
+</html>

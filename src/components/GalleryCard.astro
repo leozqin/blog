@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+    gal: CollectionEntry<"galleries">;
+}
+
+const { gal } = Astro.props;
+const galleryPath = new URL(`gallery/${gal.id}`, Astro.site);
+---
+
+<div class="border-white w-1/2">
+    <h1 class="mx-auto text-center text-xl my-2">{gal.data.title}</h1>
+    <a href={galleryPath}
+        ><Image
+            src={gal.data.cover}
+            alt="The cover image for the gallery"
+            class:list={["mx-auto", "w-3/5"]}
+        />
+    </a>
+</div>
