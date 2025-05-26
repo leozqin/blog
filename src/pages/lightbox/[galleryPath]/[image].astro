@@ -1,0 +1,69 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import HeaderMeta from "../../../components/HeaderMeta.astro";
+import NavHeader from "../../../components/NavHeader.astro";
+import { getFileName, getGalleryImages } from "../../../content";
+import Lightbox from "../../../components/Lightbox.astro";
+import PostFooter from "../../../components/PostFooter.astro";
+
+export async function getStaticPaths() {
+    const galleries = await getCollection("galleries");
+
+    interface galleryParams {
+        galleryPath: string;
+        image: string;
+    }
+
+    interface galleryProps {
+        gallery: CollectionEntry<"galleries">;
+        image: ImageMetadata;
+    }
+
+    interface staticPathConfig {
+        params: galleryParams;
+        props: galleryProps;
+    }
+
+    const paths: staticPathConfig[] = [];
+
+    for (const gal of galleries) {
+        const images = await getGalleryImages(gal.id);
+
+        for (const img of images) {
+            paths.push({
+                params: {
+                    galleryPath: gal.id,
+                    image: getFileName(img.src, Astro.site!).split(".")[0],
+                },
+                props: {
+                    gallery: gal,
+                    image: img,
+                },
+            });
+        }
+    }
+
+    return paths;
+}
+const { gallery, image } = Astro.props;
+
+const fileName = getFileName(image.src, Astro.site!);
+const metaMap = new Map(gallery.data.images!.map((obj) => [obj.src, obj]));
+
+---
+
+<html lang="en">
+    <head>
+        <title>Galleries</title>
+        <HeaderMeta />
+    </head>
+    <body class="bg-primary text-primary">
+        <NavHeader />
+        <Lightbox
+            img={image}
+            filename={fileName}
+            meta={metaMap.get(fileName)!}
+        />
+        <PostFooter />
+    </body>
+</html>

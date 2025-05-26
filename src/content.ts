@@ -1,3 +1,5 @@
+import path from "node:path"
+
 export const ContentClasses: String[] = ["prose-headings:my-2",
     "prose-h1:text-3xl",
     "prose-h2:text-2xl",
@@ -29,3 +31,28 @@ export const ContentClasses: String[] = ["prose-headings:my-2",
     "leading-relaxed",
     "tracking-wide",
     "underline-offset-4"]
+
+export async function getGalleryImages(id: string) {
+    let images = import.meta.glob<{ default: ImageMetadata }>(
+        `/src/content/gallery/**/*.{jpeg,jpg}`,
+    );
+
+    images = Object.fromEntries(
+        Object.entries(images).filter(([key]) => key.includes(id)),
+    );
+
+    const resolvedImages = await Promise.all(
+        Object.values(images).map((image) =>
+            image().then((mod) => mod.default),
+        ),
+    );
+
+    return resolvedImages;
+}
+
+export function getFileName(srcPath: string, site: URL) {
+    let outPath = path.basename(srcPath);
+    return URL.parse(outPath, site)!.pathname.replace("/", "");
+}
+
+export const defaultAlt = "An image belonging to this gallery";

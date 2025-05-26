@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets";
+import { defaultAlt, getFileName } from "../content";
+
+interface Alt {
+    src: string;
+    alt: string;
+}
+
+interface Props {
+    images: ImageMetadata[];
+    title: string;
+    description: string;
+    alt: Alt[];
+    gallery: string;
+}
+
+const { images, title, description, alt, gallery } = Astro.props;
+
+const altMap = new Map(alt.map((obj) => [obj.src, obj.alt]));
+---
+
+<section class="text-primary text-center mx-auto w-3/4 my-4">
+    <h1 class="text-4xl my-2">{title}</h1>
+    <h2 class="text-2xl">{description}</h2>
+</section>
+<section
+    class="mx-auto w-3/4 xl:w-1/2 gap-4 columns-1 lg:columns-3 xl:columns-5"
+>
+    {
+        images.map((img) => (
+            <div class="mx-auto mb-4">
+                <a
+                    href={
+                        new URL(
+                            `lightbox/${gallery}/${getFileName(img.src, Astro.site!).split(".")[0]}`,
+                            Astro.site,
+                        )
+                    }
+                >
+                    <Image
+                        src={img}
+                        alt={
+                            altMap.get(getFileName(img.src, Astro.site!)) ??
+                            defaultAlt
+                        }
+                    />
+                </a>
+            </div>
+        ))
+    }
+</section>

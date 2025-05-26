@@ -31,4 +31,14 @@ const go = defineCollection({
     })
 })
 
-export const collections = { blogs, projects, go }
+const galleries = defineCollection({
+    loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/gallery" }),
+    schema: ({ image }) => z.object({
+        title: z.string(),
+        description: z.string().optional(),
+        cover: image(),
+        images: z.array(z.object({ src: z.string(), alt: z.string().optional(), commentary: z.string().optional() })).optional()
+    }),
+});
+
+export const collections = { blogs, projects, go, galleries }

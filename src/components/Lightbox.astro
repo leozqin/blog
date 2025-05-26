@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import { defaultAlt } from "../content";
+import Button from "./Button.astro";
+
+interface GalleryItemMetadata {
+    alt: string;
+    src: string;
+    commentary?: string;
+}
+
+interface Props {
+    filename: string;
+    meta?: GalleryItemMetadata;
+    img: ImageMetadata;
+}
+
+const { filename, meta, img } = Astro.props;
+const { galleryPath, image } = Astro.params;
+---
+
+<section class="text-primary text-center mx-auto container w-7/8">
+    <h1 class="mx-auto my-4 text-2xl xl:text-4xl">{filename}</h1>
+    {
+        meta?.commentary && (
+            <p class="mb-4 w-7/8 xl:w-1/2 mx-auto text-center">
+                Commentary: {meta.commentary}
+            </p>
+        )
+    }
+    {
+        meta?.alt && (
+            <p
+                class="mb-4 w-7/8 xl:w-1/2 mx-auto text-center"
+                aria-hidden="true"
+            >
+                Image description: {meta.alt}
+            </p>
+        )
+    }
+    <Button
+        link={new URL(`gallery/${galleryPath}`, Astro.site)}
+        label="Return to Gallery"
+    />
+    <Image
+        src={img}
+        alt={meta?.alt ?? defaultAlt}
+        class="max-w-full h-auto mx-auto my-4"
+        quality={95}
+    />
+</section>
