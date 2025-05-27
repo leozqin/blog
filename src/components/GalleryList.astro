@@ -3,9 +3,10 @@ import { getCollection } from "astro:content";
 import GalleryCard from "./GalleryCard.astro";
 
 const galleries = await getCollection("galleries");
+galleries.sort((a, b) => a.data.title.localeCompare(b.data.title));
 ---
 
 <h1 class="text-3xl mx-auto text-center text-primary">Galleries</h1>
-<section class="text-primary mx-auto w-7/8 xl:w-1/2 columns-1 lg:columns-2 gap-4">
+<section class="text-primary mx-auto w-3/4 xl:w-1/2 columns-1 lg:columns-2">
     {galleries.map((gal) => <GalleryCard gal={gal} />)}
 </section>
