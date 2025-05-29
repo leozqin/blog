@@ -4,7 +4,7 @@ import { defaultAlt } from "../content";
 import Button from "./Button.astro";
 
 interface GalleryItemMetadata {
-    alt: string;
+    alt?: string;
     src: string;
     commentary?: string;
 }
@@ -45,7 +45,22 @@ const { galleryPath, image } = Astro.params;
     <Image
         src={img}
         alt={meta?.alt ?? defaultAlt}
-        class="max-w-full h-auto mx-auto my-4 w-11/12 lg:w-5/6"
+        class="max-w-full h-auto mx-auto my-4 w-11/12 lg:w-5/6 lightbox-image"
         quality={95}
     />
 </section>
+
+<style>
+    .lightbox-image {
+        border: solid;
+        border-color: white;
+
+        @media (min-width: 1000px) {
+            border-width: 20px;
+        }
+
+        @media (max-width: 999px) {
+            border-width: 10px;
+        }
+    }
+</style>
